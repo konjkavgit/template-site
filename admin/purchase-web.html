@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html class="light-style layout-navbar-fixed layout-menu-fixed layout-compact" data-assets-path="../assets/admin/" data-template="vertical-menu-template" data-theme="theme-default" dir="rtl" lang="fa">
+
+
+<!-- Mirrored from bytemaster.ir/demo/vuexy/landing/template/rtl/html/vertical-menu-template/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 01 May 2024 15:40:54 GMT -->
+<head>
+    <meta charset="UTF-8"/>
+    <meta content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" name="viewport"/>
+    <title>داشبورد - تجزیه و تحلیل | Vuexy - قالب مدیریت بوت استرپ</title>
+    <meta content="" name="description"/>
+    <!-- Favicon -->
+    <link href="https://bytemaster.ir/demo/vuexy/landing/template/rtl/assets/img/favicon/favicon.ico" rel="icon" type="image/x-icon"/>
+
+    <!-- Icons -->
+    <link href="../assets/admin/vendor/fonts/fontawesome.css" rel="stylesheet"/>
+    <link href="../assets/admin/vendor/fonts/tabler-icons.css" rel="stylesheet"/>
+    <link href="../assets/admin/vendor/fonts/flag-icons.css" rel="stylesheet"/>
+    <!-- Core CSS -->
+    <link class="template-customizer-core-css" href="../assets/admin/vendor/css/rtl/core.css" rel="stylesheet"/>
+    <link class="template-customizer-theme-css" href="../assets/admin/vendor/css/rtl/theme-default.css" rel="stylesheet"/>
+    <link href="../assets/admin/css/demo.css" rel="stylesheet"/>
+    <!-- Vendors CSS -->
+    <link href="../assets/admin/vendor/libs/node-waves/node-waves.css" rel="stylesheet"/>
+    <link href="../assets/admin/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet"/>
+    <link href="../assets/admin/vendor/libs/typeahead-js/typeahead.css" rel="stylesheet"/>
+    <link href="../assets/admin/vendor/libs/apex-charts/apex-charts.css" rel="stylesheet"/>
+    <link href="../assets/admin/vendor/libs/swiper/swiper.css" rel="stylesheet"/>
+    <link href="../assets/admin/vendor/libs/datatables-bs5/datatables.bootstrap5.css" rel="stylesheet"/>
+    <link href="../assets/admin/vendor/libs/datatables-responsive-bs5/responsive.bootstrap5.css" rel="stylesheet"/>
+    <link href="../assets/admin/vendor/libs/datatables-checkboxes-jquery/datatables.checkboxes.css" rel="stylesheet"/>
+    <!-- Page CSS -->
+    <link href="../assets/admin/vendor/css/pages/cards-advance.css" rel="stylesheet"/>
+    <!-- Helpers -->
+    <script src="../assets/admin/vendor/js/helpers.js"></script>
+    <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+    <!--? Template customizer: To hide customizer set displayCustomizer value false in config.js.  -->
+    <script src="../assets/admin/vendor/js/template-customizer.js"></script>
+    <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
+    <script src="../assets/admin/js/config.js"></script>
+    <!-- Better experience of RTL -->
+    <link href="../assets/admin/vendor/css/rtl/rtl.css" rel="stylesheet"/>
+</head>
+
+<body>
+<!-- Layout wrapper -->
+<div class="layout-wrapper layout-content-navbar">
+    <div class="layout-container">
+        <!-- Menu -->
+        <aside class="layout-menu menu-vertical menu bg-menu-theme" id="layout-menu">
+            <div class="app-brand demo">
+                <a class="app-brand-link" href="index.html">
+                    <span class="app-brand-logo demo">
+                        <img src="../assets/admin/img/logo/logo-mini-sm.png" alt="logo">
+                    </span>
+                    <span class="app-brand-text demo menu-text fw-bold">زرین کد</span>
+                </a>
+                <a class="layout-menu-toggle menu-link text-large ms-auto" href="javascript:void(0);">
+                    <i class="ti ti-menu-2 d-none d-xl-block ti-sm align-middle"></i>
+                    <i class="ti ti-x d-block d-xl-none ti-sm align-middle"></i>
+                </a>
+            </div>
+            <div class="menu-inner-shadow"></div>
+            <ul class="menu-inner py-1">
+                <!-- Dashboards -->
+                <li class="menu-item">
+                    <a class="menu-link menu-toggle" href="index.html">
+                        <i class="menu-icon tf-icons fa fa-dashboard"></i>
+                        <div>داشبورد‌</div>
+                    </a>
+                </li>
+                <!-- Layouts -->
+                <li class="menu-item">
+                    <a class="menu-link menu-toggle" href="buy-template.html">
+                        <i class="menu-icon tf-icons fa fa-layer-group"></i>
+                        <div>خرید قالب</div>
+                    </a>
+                    <!-- <ul class="menu-sub">
+                        <li class="menu-item">
+                            <a class="menu-link" href="layouts-collapsed-menu.html">
+                                <div "Collapsed menu">منو جمع شده</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="layouts-content-navbar.html">
+                                <div "Content navbar">نوار ناوبری محتوا</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="layouts-content-navbar-with-sidebar.html">
+                                <div "Content nav + Sidebar">ناوبری محتوا + سایدبار</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="https://bytemaster.ir/demo/vuexy/landing/template/rtl/html/horizontal-menu-template" target="_blank">
+                                <div "Horizontal">منو افقی</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="layouts-without-menu.html">
+                                <div "Without menu">بدون منو</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="layouts-without-navbar.html">
+                                <div "Without navbar">بدون نوار ناوبری</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="layouts-fluid.html">
+                                <div "Fluid">محتوای تمام عرض</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="layouts-container.html">
+                                <div "Container">دربرگیرنده</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="layouts-blank.html">
+                                <div "Blank">صفحه خالی</div>
+                            </a>
+                        </li>
+                    </ul> -->
+                </li>
+                <!-- Front Pages -->
+                <li class="menu-item">
+                    <a class="menu-link menu-toggle" href="purchase-web.html">
+                        <i class="menu-icon tf-icons fa fa-archive"></i>
+                        <div>ثبت سایت</div>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-link" href="purchased-web.html">
+                        <i class="menu-icon tf-icons fa fa-archive"></i>
+                        <div>سایت های ثبت شده</div>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-link" href="Tariff.html">
+                        <i class="menu-icon tf-icons fa fa-box"></i>
+                        <div>تعرفه ها</div>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-link menu-toggle" href="financial.html">
+                        <i class="menu-icon fa fa-bar-chart"></i>
+                        <div>مالی</div>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-link menu-toggle" href="profile.html">
+                        <i class="menu-icon fa fa-bar-chart"></i>
+                        <div>پروفایل</div>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-link" href="support.html">
+                        <i class="fa fa-mail-bulk menu-icon tf-icons" aria-hidden="true"></i>
+                        <div>پشتیبانی</div>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+        <!-- / Menu -->
+        <!-- Layout container -->
+        <div class="layout-page">
+            <!-- Navbar -->
+            <nav class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme" id="layout-navbar">
+                <div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none">
+                    <a class="nav-item nav-link px-0 me-xl-4" href="javascript:void(0)">
+                        <i class="ti ti-menu-2 ti-sm"></i>
+                    </a>
+                </div>
+                <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
+                    <!-- Search -->
+                    <div class="navbar-nav align-items-center">
+                        <div class="nav-item navbar-search-wrapper mb-0">
+                            <a class="nav-item nav-link search-toggler d-flex align-items-center px-0" href="javascript:void(0);">
+                                <i class="ti ti-search ti-md me-2 h-mirror"></i>
+                                <span class="d-none d-md-inline-block text-muted">جستجو (/+Ctrl)</span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- /Search -->
+                    <ul class="navbar-nav flex-row align-items-center ms-auto">
+                        <!-- Quick links  -->
+                        <li class="nav-item dropdown-shortcuts navbar-dropdown dropdown me-2 me-xl-0">
+                            <a aria-expanded="false" class="nav-link dropdown-toggle hide-arrow" data-bs-auto-close="outside" data-bs-toggle="dropdown" href="javascript:void(0);">
+                                <i class="ti ti-layout-grid-add ti-md"></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-end py-0">
+                                <div class="dropdown-menu-header border-bottom">
+                                    <div class="dropdown-header d-flex align-items-center py-3">
+                                        <h5 class="text-body mb-0 me-auto">میانبرها</h5>
+                                        <a class="dropdown-shortcuts-add text-body" data-bs-placement="top" data-bs-toggle="tooltip" href="javascript:void(0)" title="افزودن میانبر">
+                                            <i class="ti ti-sm ti-apps"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="dropdown-shortcuts-list scrollable-container">
+                                    <div class="row row-bordered overflow-visible g-0">
+                                        <div class="dropdown-shortcuts-item col">
+                                            <span class="dropdown-shortcuts-icon rounded-circle mb-2 mt-1">
+                                                <i class="ti ti-calendar fs-4"></i>
+                                            </span>
+                                            <a class="stretched-link mb-0" href="app-calendar.html">تقویم</a>
+                                            <small class="text-muted mb-0">قرارهای ملاقات</small>
+                                        </div>
+                                        <div class="dropdown-shortcuts-item col">
+                                            <span class="dropdown-shortcuts-icon rounded-circle mb-2 mt-1">
+                                                <i class="ti ti-file-invoice fs-4"></i>
+                                            </span>
+                                            <a class="stretched-link mb-0" href="app-invoice-list.html">صورتحساب‌</a>
+                                            <small class="text-muted mb-0">مدیریت پرداخت‌ها</small>
+                                        </div>
+                                    </div>
+                                    <div class="row row-bordered overflow-visible g-0">
+                                        <div class="dropdown-shortcuts-item col">
+                                            <span class="dropdown-shortcuts-icon rounded-circle mb-2 mt-1">
+                                                <i class="ti ti-users fs-4"></i>
+                                            </span>
+                                            <a class="stretched-link mb-0" href="app-user-list.html">مشتریان</a>
+                                            <small class="text-muted mb-0">مدیریت کاربران</small>
+                                        </div>
+                                        <div class="dropdown-shortcuts-item col">
+                                            <span class="dropdown-shortcuts-icon rounded-circle mb-2 mt-1">
+                                                <i class="ti ti-lock fs-4"></i>
+                                            </span>
+                                            <a class="stretched-link mb-0" href="app-access-roles.html">سطح دسترسی</a>
+                                            <small class="text-muted mb-0">موارد امنیتی</small>
+                                        </div>
+                                    </div>
+                                    <div class="row row-bordered overflow-visible g-0">
+                                        <div class="dropdown-shortcuts-item col">
+                                            <span class="dropdown-shortcuts-icon rounded-circle mb-2 mt-1">
+                                                <i class="ti ti-chart-bar fs-4"></i>
+                                            </span>
+                                            <a class="stretched-link mb-0" href="index.html">داشبورد</a>
+                                            <small class="text-muted mb-0">گزارش آماری</small>
+                                        </div>
+                                        <div class="dropdown-shortcuts-item col">
+                                            <span class="dropdown-shortcuts-icon rounded-circle mb-2 mt-1">
+                                                <i class="ti ti-settings fs-4"></i>
+                                            </span>
+                                            <a class="stretched-link mb-0" href="pages-account-settings-account.html">تنظیمات</a>
+                                            <small class="text-muted mb-0">مدیریت سیستم</small>
+                                        </div>
+                                    </div>
+                                    <div class="row row-bordered overflow-visible g-0">
+                                        <div class="dropdown-shortcuts-item col">
+                                            <span class="dropdown-shortcuts-icon rounded-circle mb-2 mt-1">
+                                                <i class="ti ti-help fs-4"></i>
+                                            </span>
+                                            <a class="stretched-link mb-0" href="pages-faq.html">مرکز پشتیبانی</a>
+                                            <small class="text-muted mb-0">سوالات متداول و راهنما</small>
+                                        </div>
+                                        <div class="dropdown-shortcuts-item col">
+                                            <span class="dropdown-shortcuts-icon rounded-circle mb-2 mt-1">
+                                                <i class="ti ti-square fs-4"></i>
+                                            </span>
+                                            <a class="stretched-link mb-0" href="modal-examples.html">مُـدال‌ها</a>
+                                            <small class="text-muted mb-0">پاپ‌آپ‌های کاربردی</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Quick links -->
+                        <!-- Notification -->
+                        <li class="nav-item dropdown-notifications navbar-dropdown dropdown me-3 me-xl-1">
+                            <a aria-expanded="false" class="nav-link dropdown-toggle hide-arrow" data-bs-auto-close="outside" data-bs-toggle="dropdown" href="javascript:void(0);">
+                                <i class="ti ti-bell ti-md"></i>
+                                <span class="badge bg-danger rounded-pill badge-notifications">5</span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end py-0">
+                                <li class="dropdown-menu-header border-bottom">
+                                    <div class="dropdown-header d-flex align-items-center py-3">
+                                        <h5 class="text-body mb-0 me-auto">اعلانات</h5>
+                                        <a class="dropdown-notifications-all text-body" data-bs-placement="top" data-bs-toggle="tooltip" href="javascript:void(0)" title="همه خوانده شده">
+                                            <i class="ti ti-mail-opened fs-4"></i>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="dropdown-notifications-list scrollable-container">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item list-group-item-action dropdown-notifications-item">
+                                            <div class="d-flex">
+                                                <div class="flex-shrink-0 me-3">
+                                                    <div class="avatar">
+                                                        <img alt class="h-auto rounded-circle" src="../assets/admin/img/avatars/1.png"/>
+                                                    </div>
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    <h6 class="mb-2">تبریک به شما 🎉</h6>
+                                                    <p class="mb-1">نشان برترین فروشنده ماه رو گرفتید</p>
+                                                    <small class="text-muted">الان</small>
+                                                </div>
+                                                <div class="flex-shrink-0 dropdown-notifications-actions">
+                                                    <a class="dropdown-notifications-read" href="javascript:void(0)">
+                                                        <span class="badge badge-dot"></span>
+                                                    </a>
+                                                    <a class="dropdown-notifications-archive" href="javascript:void(0)">
+                                                        <span class="ti ti-x"></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item list-group-item-action dropdown-notifications-item">
+                                            <div class="d-flex">
+                                                <div class="flex-shrink-0 me-3">
+                                                    <div class="avatar">
+                                                        <span class="avatar-initial rounded-circle bg-label-danger">ن‌م</span>
+                                                    </div>
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    <h6 class="mb-2">نوید محمدزاده</h6>
+                                                    <p class="mb-1">درخواست شمارا پذیرفت.</p>
+                                                    <small class="text-muted">1 ساعت قبل</small>
+                                                </div>
+                                                <div class="flex-shrink-0 dropdown-notifications-actions">
+                                                    <a class="dropdown-notifications-read" href="javascript:void(0)">
+                                                        <span class="badge badge-dot"></span>
+                                                    </a>
+                                                    <a class="dropdown-notifications-archive" href="javascript:void(0)">
+                                                        <span class="ti ti-x"></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item list-group-item-action dropdown-notifications-item marked-as-read">
+                                            <div class="d-flex">
+                                                <div class="flex-shrink-0 me-3">
+                                                    <div class="avatar">
+                                                        <img alt class="h-auto rounded-circle" src="../assets/admin/img/avatars/2.png"/>
+                                                    </div>
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    <h6 class="mb-2">پیام جدید از بهاره ✉️</h6>
+                                                    <p class="mb-1">شما یک پیام جدید از بهاره افشاری دارید</p>
+                                                    <small class="text-muted">12 ساعت قبل</small>
+                                                </div>
+                                                <div class="flex-shrink-0 dropdown-notifications-actions">
+                                                    <a class="dropdown-notifications-read" href="javascript:void(0)">
+                                                        <span class="badge badge-dot"></span>
+                                                    </a>
+                                                    <a class="dropdown-notifications-archive" href="javascript:void(0)">
+                                                        <span class="ti ti-x"></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item list-group-item-action dropdown-notifications-item">
+                                            <div class="d-flex">
+                                                <div class="flex-shrink-0 me-3">
+                                                    <div class="avatar">
+                                                        <span class="avatar-initial rounded-circle bg-label-success">
+                                                            <i class="ti ti-shopping-cart"></i>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    <h6 class="mb-2">ایول! سفارش جدید داری 🛒</h6>
+                                                    <p class="mb-1">شرکت یلدا سفارشی جدید ثبت کرد</p>
+                                                    <small class="text-muted">امروز</small>
+                                                </div>
+                                                <div class="flex-shrink-0 dropdown-notifications-actions">
+                                                    <a class="dropdown-notifications-read" href="javascript:void(0)">
+                                                        <span class="badge badge-dot"></span>
+                                                    </a>
+                                                    <a class="dropdown-notifications-archive" href="javascript:void(0)">
+                                                        <span class="ti ti-x"></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item list-group-item-action dropdown-notifications-item marked-as-read">
+                                            <div class="d-flex">
+                                                <div class="flex-shrink-0 me-3">
+                                                    <div class="avatar">
+                                                        <img alt class="h-auto rounded-circle" src="../assets/admin/img/avatars/9.png"/>
+                                                    </div>
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    <h6 class="mb-2">اپلیکیشن بروزرسانی شد 🚀</h6>
+                                                    <p class="mb-1">پروژه شما باموفقیت آپدیت شد.</p>
+                                                    <small class="text-muted">دیروز</small>
+                                                </div>
+                                                <div class="flex-shrink-0 dropdown-notifications-actions">
+                                                    <a class="dropdown-notifications-read" href="javascript:void(0)">
+                                                        <span class="badge badge-dot"></span>
+                                                    </a>
+                                                    <a class="dropdown-notifications-archive" href="javascript:void(0)">
+                                                        <span class="ti ti-x"></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item list-group-item-action dropdown-notifications-item marked-as-read">
+                                            <div class="d-flex">
+                                                <div class="flex-shrink-0 me-3">
+                                                    <div class="avatar">
+                                                        <span class="avatar-initial rounded-circle bg-label-success">
+                                                            <i class="ti ti-chart-pie"></i>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    <h6 class="mb-2">گزارش ماهانه دردسترس است</h6>
+                                                    <p class="mb-1">گزارش درآمد ماه شهریور آماده است</p>
+                                                    <small class="text-muted">2 روز قبل</small>
+                                                </div>
+                                                <div class="flex-shrink-0 dropdown-notifications-actions">
+                                                    <a class="dropdown-notifications-read" href="javascript:void(0)">
+                                                        <span class="badge badge-dot"></span>
+                                                    </a>
+                                                    <a class="dropdown-notifications-archive" href="javascript:void(0)">
+                                                        <span class="ti ti-x"></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item list-group-item-action dropdown-notifications-item marked-as-read">
+                                            <div class="d-flex">
+                                                <div class="flex-shrink-0 me-3">
+                                                    <div class="avatar">
+                                                        <img alt class="h-auto rounded-circle" src="../assets/admin/img/avatars/5.png"/>
+                                                    </div>
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    <h6 class="mb-2">ارسال درخواست همکاری</h6>
+                                                    <p class="mb-1">حسام درخواست همکاری فرستاد</p>
+                                                    <small class="text-muted">1 هفته قبل</small>
+                                                </div>
+                                                <div class="flex-shrink-0 dropdown-notifications-actions">
+                                                    <a class="dropdown-notifications-read" href="javascript:void(0)">
+                                                        <span class="badge badge-dot"></span>
+                                                    </a>
+                                                    <a class="dropdown-notifications-archive" href="javascript:void(0)">
+                                                        <span class="ti ti-x"></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item list-group-item-action dropdown-notifications-item">
+                                            <div class="d-flex">
+                                                <div class="flex-shrink-0 me-3">
+                                                    <div class="avatar">
+                                                        <img alt class="h-auto rounded-circle" src="../assets/admin/img/avatars/6.png"/>
+                                                    </div>
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    <h6 class="mb-2">پیام جدید از ترانه</h6>
+                                                    <p class="mb-1">شما یک پیام جدید دارید</p>
+                                                    <small class="text-muted">1 ماه قبل</small>
+                                                </div>
+                                                <div class="flex-shrink-0 dropdown-notifications-actions">
+                                                    <a class="dropdown-notifications-read" href="javascript:void(0)">
+                                                        <span class="badge badge-dot"></span>
+                                                    </a>
+                                                    <a class="dropdown-notifications-archive" href="javascript:void(0)">
+                                                        <span class="ti ti-x"></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item list-group-item-action dropdown-notifications-item marked-as-read">
+                                            <div class="d-flex">
+                                                <div class="flex-shrink-0 me-3">
+                                                    <div class="avatar">
+                                                        <span class="avatar-initial rounded-circle bg-label-warning">
+                                                            <i class="ti ti-alert-triangle"></i>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    <h6 class="mb-2">میزان مصرف CPU بالاست</h6>
+                                                    <p class="mb-1">درصد استفاده از CPU درحال حاضر 90%</p>
+                                                    <small class="text-muted">1 ماه قبل</small>
+                                                </div>
+                                                <div class="flex-shrink-0 dropdown-notifications-actions">
+                                                    <a class="dropdown-notifications-read" href="javascript:void(0)">
+                                                        <span class="badge badge-dot"></span>
+                                                    </a>
+                                                    <a class="dropdown-notifications-archive" href="javascript:void(0)">
+                                                        <span class="ti ti-x"></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-menu-footer border-top">
+                                    <a class="dropdown-item d-flex justify-content-center text-primary p-2 h-px-40 mb-1 align-items-center" href="javascript:void(0);">
+                                        نمایش همه اعلانات
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!--/ Notification -->
+                        <!-- User -->
+                        <li class="nav-item navbar-dropdown dropdown-user dropdown">
+                            <a class="nav-link dropdown-toggle hide-arrow" data-bs-toggle="dropdown" href="javascript:void(0);">
+                                <div class="avatar avatar-online">
+                                    <img alt class="h-auto rounded-circle" src="../assets/admin/img/avatars/1.png"/>
+                                </div>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li>
+                                    <a class="dropdown-item" href="pages-account-settings-account.html">
+                                        <div class="d-flex">
+                                            <div class="flex-shrink-0 me-3">
+                                                <div class="avatar avatar-online">
+                                                    <img alt class="h-auto rounded-circle" src="../assets/admin/img/avatars/1.png"/>
+                                                </div>
+                                            </div>
+                                            <div class="flex-grow-1">
+                                                <span class="fw-semibold d-block mb-1">نوید محمدزاده</span>
+                                                <small class="text-muted">مدیرکل</small>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <div class="dropdown-divider"></div>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="pages-profile-user.html">
+                                        <i class="ti ti-user-check me-2 ti-sm"></i>
+                                        <span class="align-middle">پروفایل من</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="pages-account-settings-account.html">
+                                        <i class="ti ti-settings me-2 ti-sm"></i>
+                                        <span class="align-middle">تنظیمات</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="pages-account-settings-billing.html">
+                                        <span class="d-flex align-items-center align-middle">
+                                            <i class="flex-shrink-0 ti ti-credit-card me-2 ti-sm"></i>
+                                            <span class="flex-grow-1 align-middle">خریدها</span>
+                                            <span class="flex-shrink-0 badge badge-center rounded-pill bg-label-danger w-px-20 h-px-20">2
+                                            </span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <div class="dropdown-divider"></div>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="pages-faq.html">
+                                        <i class="ti ti-help me-2 ti-sm"></i>
+                                        <span class="align-middle">سوالات متداول</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="pages-pricing.html">
+                                        <i class="ti ti-currency-dollar me-2 ti-sm"></i>
+                                        <span class="align-middle">قیمت گذاری</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <div class="dropdown-divider"></div>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="auth-login-cover.html" target="_blank">
+                                        <i class="ti ti-logout me-2 ti-sm"></i>
+                                        <span class="align-middle">خروج از حساب</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!--/ User -->
+                    </ul>
+                </div>
+                <!-- Search Small Screens -->
+                <div class="navbar-search-wrapper search-input-wrapper d-none">
+                    <input aria-label="جستجو..." class="form-control search-input container-xxl border-0" placeholder="جستجو..." type="text"/>
+                    <i class="ti ti-x ti-sm search-toggler cursor-pointer"></i>
+                </div>
+            </nav>
+            <!-- / Navbar -->
+            <!-- Content wrapper -->
+            <div class="content-wrapper">
+                <!-- Content -->
+                <div class="container-xxl flex-grow-1 container-p-y">
+                    <h4 class="py-3 mb-4">
+                        <span class="text-muted fw-light">تجارت الکترونیک /</span>
+                        تنظیمات فروشگاه
+                    </h4>
+                    <div class="row g-4">
+                        <!-- Navigation -->
+                        <div class="col-12 col-lg-4">
+                            <div class="d-flex justify-content-between flex-column mb-3 mb-md-0">
+                                <ul class="nav nav-align-left nav-pills flex-column">
+                                    <li class="nav-item mb-1">
+                                        <a class="nav-link py-2 active" href="javascript:void(0);">
+                                            <i class="ti ti-building-store me-2"></i>
+                                            <span class="align-middle">جزئیات فروشگاه</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item mb-1">
+                                        <a class="nav-link py-2" href="app-ecommerce-settings-payments.html">
+                                            <i class="ti ti-credit-card me-2"></i>
+                                            <span class="align-middle">سیستم پرداخت</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item mb-1">
+                                        <a class="nav-link py-2" href="app-ecommerce-settings-checkout.html">
+                                            <i class="ti ti-shopping-cart me-2"></i>
+                                            <span class="align-middle">ثبت سفارش</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item mb-1">
+                                        <a class="nav-link py-2" href="app-ecommerce-settings-shipping.html">
+                                            <i class="ti ti-discount-2 me-2"></i>
+                                            <span class="align-middle">ارسال و تحویل</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item mb-1">
+                                        <a class="nav-link py-2" href="app-ecommerce-settings-locations.html">
+                                            <i class="ti ti-map-pin me-2"></i>
+                                            <span class="align-middle">آدرس فروشگاه</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link py-2" href="app-ecommerce-settings-notifications.html">
+                                            <i class="ti ti-bell-ringing me-2"></i>
+                                            <span class="align-middle">نوتیفیکیشن</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- /Navigation -->
+                        <!-- Options -->
+                        <div class="col-12 col-lg-8 pt-4 pt-lg-0">
+                            <div class="tab-content p-0">
+                                <!-- Store Details Tab -->
+                                <div class="tab-pane fade show active" id="store_details" role="tabpanel">
+                                    <div class="card mb-4">
+                                        <div class="card-header">
+                                            <h5 class="card-title m-0">مشخصات فروشگاه</h5>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="row mb-3 g-3">
+                                                <div class="col-12 col-md-6">
+                                                    <label class="form-label mb-0" for="ecommerce-settings-details-name">نام فروشگاه</label>
+                                                    <input aria-label="جزئیات تنظیمات" class="form-control" id="ecommerce-settings-details-name" name="settingsDet" placeholder="نوید محمدزاده" type="text">
+                                                </div>
+                                                <div class="col-12 col-md-6">
+                                                    <label class="form-label mb-0" for="ecommerce-settings-details-phone">تلفن</label>
+                                                    <input aria-label="تلفن" class="form-control phone-mask" id="ecommerce-settings-details-phone" name="phone" placeholder="(031) 0000 0000" type="tel">
+                                                </div>
+                                                <div class="col-12 col-md-6">
+                                                    <label class="form-label mb-0" for="ecommerce-settings-details-email">ایمیل فروشگاه</label>
+                                                    <input aria-label="ایمیل" class="form-control" id="ecommerce-settings-details-email" name="email" placeholder="johndoe@gmail.com" type="email">
+                                                </div>
+                                                <div class="col-12 col-md-6">
+                                                    <label class="form-label mb-0" for="ecommerce-settings-sender-email">ایمیل ارتباط با مشتری</label>
+                                                    <input aria-label="ایمیل فرستنده" class="form-control" id="ecommerce-settings-sender-email" name="sender_email" placeholder="johndoe@gmail.com" type="email">
+                                                </div>
+                                            </div>
+                                            <div class="alert d-flex align-items-center bg-label-warning mb-0" role="alert">
+                                                <span class="alert-icon text-warning me-2 bg-label-light px-2 pb-2 rounded-2">
+                                                    <i class="ti ti-bell ti-xs mt-1"></i>
+                                                </span>
+                                                با ارسال کد و تایید به johndoe@gmail.com مطمئن می شویم که به آن دسترسی دارید.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card mb-4">
+                                        <div class="card-header">
+                                            <h5 class="card-title m-0">اطلاعات صورتحساب</h5>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="row g-3">
+                                                <div class="col-12 col-md-6">
+                                                    <label class="form-label mb-0" for="business-name">نام شرکت</label>
+                                                    <input class="form-control" id="business-name" placeholder="نام کسب و کار" type="text">
+                                                </div>
+                                                <div class="col-12 col-md-6">
+                                                    <label class="form-label mb-0" for="country_region">کشور</label>
+                                                    <div class="position-relative"><select class="select2 form-select select2-hidden-accessible" data-placeholder="ایران" id="country_region" data-select2-id="country_region" tabindex="-1" aria-hidden="true">
+                                                        <option value="" data-select2-id="2">ایالات متحده</option>
+                                                        <option value="Australia">استرالیا</option>
+                                                        <option value="Bangladesh">بنگلادش</option>
+                                                        <option value="Belarus">بلاروس</option>
+                                                        <option value="Brazil">برزیل</option>
+                                                        <option value="Canada">کانادا</option>
+                                                        <option value="China">چین</option>
+                                                        <option value="France">فرانسه</option>
+                                                        <option value="Germany">آلمان</option>
+                                                        <option value="India">هندوستان</option>
+                                                        <option value="Indonesia">اندونزی</option>
+                                                        <option value="Israel">اسرائيل</option>
+                                                        <option value="Italy">ایتالیا</option>
+                                                        <option value="Japan">ژاپن</option>
+                                                        <option value="Korea">جمهوری کره</option>
+                                                        <option value="Mexico">مکزیک</option>
+                                                        <option value="Philippines">فیلیپین</option>
+                                                        <option value="Russia">فدراسیون روسیه</option>
+                                                        <option value="South Africa">آفریقای جنوبی</option>
+                                                        <option value="Thailand">تایلند</option>
+                                                        <option value="Turkey">ترکیه</option>
+                                                        <option value="Ukraine">اوکراین</option>
+                                                        <option value="United Arab Emirates">امارات متحده عربی</option>
+                                                        <option value="United Kingdom">انگلستان</option>
+                                                        <option value="United States">ایالات متحده</option>
+                                                    </select><span class="select2 select2-container select2-container--default" dir="rtl" data-select2-id="1" style="width: 282.438px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-country_region-container"><span class="select2-selection__rendered" id="select2-country_region-container" role="textbox" aria-readonly="true"><span class="select2-selection__placeholder">ایران</span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span></div>
+                                                </div>
+                                                <div class="col-12 col-md-6">
+                                                    <label class="form-label mb-0" for="bill_address">آدرس</label>
+                                                    <input class="form-control" id="bill_address" placeholder="تهران ، فرشته ...." type="text">
+                                                </div>
+                                                <div class="col-12 col-md-6">
+                                                    <label class="form-label mb-0" for="apa_suite">نوع ساختمان</label>
+                                                    <input class="form-control" id="apa_suite" placeholder="آپارتمان، سوئیت و غیره" type="text">
+                                                </div>
+                                                <div class="col-12 col-md-4">
+                                                    <label class="form-label mb-0" for="bill_city">شهر</label>
+                                                    <input class="form-control" id="bill_city" placeholder="ری ..." type="text">
+                                                </div>
+                                                <div class="col-12 col-md-4">
+                                                    <label class="form-label mb-0" for="bill_state">استان</label>
+                                                    <input class="form-control" id="bill_state" placeholder="تهران ..." type="text">
+                                                </div>
+                                                <div class="col-12 col-md-4">
+                                                    <label class="form-label mb-0" for="bill_pincode">کد پستی</label>
+                                                    <input class="form-control" id="bill_pincode" max="999999" min="0" placeholder="1234" type="number">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card mb-4">
+                                        <div class="card-header">
+                                            <div class="card-title mb-0">
+                                                <h5 class="m-0 mb-1">منطقه زمانی و واحدهای اندازه گیری</h5>
+                                                <p class="text-muted mb-0"> برای محاسبه قیمت محصول، وزن حمل و نقل و زمان سفارش استفاده می شود.</p>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="row g-3">
+                                                <div class="col-12">
+                                                    <label class="form-label mb-0" for="timeZones">منطقه زمانی</label>
+                                                    <div class="position-relative"><select class="select2 form-select select2-hidden-accessible" data-placeholder="(GMT-12:00) International Date Line West" id="timeZones" data-select2-id="timeZones" tabindex="-1" aria-hidden="true">
+                                                        <option value="" data-select2-id="4">(GMT-12:00) خط تاریخ بین المللی غرب</option>
+                                                        <option value="-12">(GMT-12:00) خط تاریخ بین المللی غرب</option>
+                                                        <option value="-11">(GMT-11:00) جزیره میدوی، ساموآ</option>
+                                                        <option value="-10">(GMT-10:00) هاوایی</option>
+                                                        <option value="-9">(GMT-09:00) آلاسکا</option>
+                                                        <option value="-8">(GMT-08:00) به وقت اقیانوس آرام (ایالات متحده و کانادا)</option>
+                                                        <option value="-8">(GMT-08:00) تیجوانا، باخا کالیفرنیا</option>
+                                                        <option value="-7">(GMT-07:00) آریزونا</option>
+                                                        <option value="-7">(GMT-07:00) چیهواهوا، لاپاز، مازاتلان</option>
+                                                        <option value="-7">(GMT-07:00) به وقت کوهستان (ایالات متحده و کانادا)</option>
+                                                        <option value="-6">(GMT-06:00) آمریکای مرکزی</option>
+                                                        <option value="-6">(GMT-06:00) به وقت مرکزی (ایالات متحده و کانادا)</option>
+                                                        <option value="-6">(GMT-06:00) گوادالاخارا، مکزیکو سیتی، مونتری</option>
+                                                        <option value="-6">(GMT-06:00) ساسکاچوان</option>
+                                                        <option value="-5">(GMT-05:00) بوگوتا، لیما، کیتو، ریو برانکو</option>
+                                                        <option value="-5">(GMT-05:00) به وقت شرقی (ایالات متحده و کانادا)</option>
+                                                        <option value="-5">(GMT-05:00) ایندیانا (شرق)</option>
+                                                        <option value="-4">(GMT-04:00) به وقت اقیانوس اطلس (کانادا)</option>
+                                                        <option value="-4">(GMT-04:00) کاراکاس، لاپاز</option>
+                                                    </select><span class="select2 select2-container select2-container--default" dir="rtl" data-select2-id="3" style="width: 580.885px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-timeZones-container"><span class="select2-selection__rendered" id="select2-timeZones-container" role="textbox" aria-readonly="true"><span class="select2-selection__placeholder">(GMT-12:00) International Date Line West</span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span></div>
+                                                </div>
+                                                <div class="col-12 col-md-6">
+                                                    <label class="form-label mb-0" for="unitSystemDropdown">سیستم واحد</label>
+                                                    <div class="position-relative"><select class="select2 form-select select2-hidden-accessible" data-placeholder="سیستم بین المللی" id="unitSystemDropdown" data-select2-id="unitSystemDropdown" tabindex="-1" aria-hidden="true">
+                                                        <option value="" data-select2-id="6">متریک</option>
+                                                        <option value="metric">metric</option>
+                                                        <option value="imperial">imperial</option>
+                                                        <option value="us">us</option>
+                                                        <option value="si">سیستم بین المللی</option>
+                                                    </select><span class="select2 select2-container select2-container--default" dir="rtl" data-select2-id="5" style="width: 282.438px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-unitSystemDropdown-container"><span class="select2-selection__rendered" id="select2-unitSystemDropdown-container" role="textbox" aria-readonly="true"><span class="select2-selection__placeholder">سیستم بین المللی</span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span></div>
+                                                </div>
+                                                <div class="col-12 col-md-6">
+                                                    <label class="form-label mb-0" for="weightUnits">واحد وزن پیش فرض</label>
+                                                    <div class="position-relative"><select class="select2 form-select select2-hidden-accessible" data-placeholder="کیلوگرم" id="weightUnits" data-select2-id="weightUnits" tabindex="-1" aria-hidden="true">
+                                                        <option value="" data-select2-id="8">...</option>
+                                                        <option value="kg">کیلوگرم</option>
+                                                        <option value="lb">پوند</option>
+                                                        <option value="g">گرم</option>
+                                                        <option value="mg">میلی گرم</option>
+                                                    </select><span class="select2 select2-container select2-container--default" dir="rtl" data-select2-id="7" style="width: 282.438px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-weightUnits-container"><span class="select2-selection__rendered" id="select2-weightUnits-container" role="textbox" aria-readonly="true"><span class="select2-selection__placeholder">کیلوگرم</span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card mb-4">
+                                        <div class="card-header">
+                                            <div class="card-title mb-0">
+                                                <h5 class="m-0 mb-1">واحد ارز</h5>
+                                                <p class="text-muted mb-0">ارزی که محصولات شما با آن فروخته می شود.</p>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div>
+                                                <label class="form-label mb-0" for="currency-store">واحد پول</label>
+                                                <div class="position-relative"><select class="select2 form-select select2-hidden-accessible" data-placeholder="واحد پول فروشگاه" id="currency-store" data-select2-id="currency-store" tabindex="-1" aria-hidden="true">
+                                                    <option value="" data-select2-id="10">انتخاب ...</option>
+                                                    <option value="IRT">ءتء</option>
+                                                    <option value="IRR">ءرء</option>
+                                                    <option value="usd">USD</option>
+                                                    <option value="euro">یورو</option>
+                                                    <option value="pound">پوند</option>
+                                                    <option value="bitcoin">بیت کوین</option>
+                                                </select><span class="select2 select2-container select2-container--default" dir="rtl" data-select2-id="9" style="width: 580.885px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-currency-store-container"><span class="select2-selection__rendered" id="select2-currency-store-container" role="textbox" aria-readonly="true"><span class="select2-selection__placeholder">واحد پول فروشگاه</span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card mb-4">
+                                        <div class="card-header">
+                                            <div class="card-title mb-0">
+                                                <h5 class="m-0 mb-1">فرمت کد سفارشات</h5>
+                                                <p class="text-muted mb-0"> در صفحه سفارشات، صفحات مشتری و اعلان های سفارش مشتری برای شناسایی سفارش ها نشان داده شده است.</p>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="row mb-3 g-3">
+                                                <div class="col-12 col-md-6">
+                                                    <label class="form-label mb-0" for="ecommerce-settings-details-prefix">پیشوند</label>
+                                                    <div class="input-group input-group-merge">
+                                                        <span class="input-group-text text-muted">#</span>
+                                                        <input aria-label="پیشوند" class="form-control" id="ecommerce-settings-details-prefix" min="0" name="prefix" type="number">
+                                                    </div>
+                                                    <p class="text-muted mb-0 pt-2">شناسه سفارش شما به صورت #1001، #1002، #1003 ظاهر می شود.</p>
+                                                </div>
+                                                <div class="col-12 col-md-6">
+                                                    <label class="form-label mb-0" for="ecommerce-settings-sender-suffix">پسوند</label>
+                                                    <input aria-label="Suffix" class="form-control" id="ecommerce-settings-sender-suffix" name="suffix" type="text">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-end gap-3">
+                                        <button class="btn btn-label-secondary waves-effect" type="reset">صرف نظر</button>
+                                        <a class="btn btn-primary waves-effect waves-light" href="#">اعمال تغییرات</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /Options-->
+                    </div>
+                </div>
+                <!-- / Content -->
+                <!-- Footer -->
+                <footer class="content-footer footer bg-footer-theme">
+                    <div class="container-xxl">
+                        <div class="footer-container d-flex align-items-center justify-content-center py-2 flex-md-row flex-column">
+                            <div> ©
+                                <script>
+                                    document.write(new Date().getFullYear());
+
+                                </script>
+                                , ارائه شده توسط
+                                <span class="text-muted">زرین کد</span>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+                <!-- / Footer -->
+                <div class="content-backdrop fade"></div>
+            </div>
+            <!-- Content wrapper -->
+        </div>
+        <!-- / Layout page -->
+    </div>
+    <!-- Overlay -->
+    <div class="layout-overlay layout-menu-toggle"></div>
+    <!-- Drag Target Area To SlideIn Menu On Small Screens -->
+    <div class="drag-target"></div>
+</div>
+<!-- / Layout wrapper -->
+<!-- Core JS -->
+<!-- build:js assets/vendor/js/core.js -->
+<script src="../assets/admin/vendor/libs/jquery/jquery.js"></script>
+<script src="../assets/admin/vendor/libs/popper/popper.js"></script>
+<script src="../assets/admin/vendor/js/bootstrap.js"></script>
+<script src="../assets/admin/vendor/libs/node-waves/node-waves.js"></script>
+<script src="../assets/admin/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+<script src="../assets/admin/vendor/libs/hammer/hammer.js"></script>
+<script src="../assets/admin/vendor/libs/i18n/i18n.js"></script>
+<script src="../assets/admin/vendor/libs/typeahead-js/typeahead.js"></script>
+<script src="../assets/admin/vendor/js/menu.js"></script>
+<!-- endbuild -->
+<!-- Vendors JS -->
+<script src="../assets/admin/vendor/libs/apex-charts/apexcharts.js"></script>
+<script src="../assets/admin/vendor/libs/swiper/swiper.js"></script>
+<script src="../assets/admin/vendor/libs/datatables-bs5/datatables-bootstrap5.js"></script>
+<!-- Main JS -->
+<script src="../assets/admin/js/main.js"></script>
+<!-- Page JS -->
+<script src="../assets/admin/js/dashboards-analytics.js"></script>
+</body>
+
+
+<!-- Mirrored from bytemaster.ir/demo/vuexy/landing/template/rtl/html/vertical-menu-template/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 01 May 2024 15:51:36 GMT -->
+</html>

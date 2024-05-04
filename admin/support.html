@@ -1,0 +1,1501 @@
+<!DOCTYPE html>
+<html class="light-style layout-navbar-fixed layout-menu-fixed layout-compact" data-assets-path="../assets/admin/" data-template="vertical-menu-template" data-theme="theme-default" dir="rtl" lang="fa">
+
+
+<!-- Mirrored from bytemaster.ir/demo/vuexy/landing/template/rtl/html/vertical-menu-template/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 01 May 2024 15:40:54 GMT -->
+<head>
+    <meta charset="UTF-8"/>
+    <meta content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" name="viewport"/>
+    <title>داشبورد - تجزیه و تحلیل | Vuexy - قالب مدیریت بوت استرپ</title>
+    <meta content="" name="description"/>
+    <!-- Favicon -->
+    <link href="https://bytemaster.ir/demo/vuexy/landing/template/rtl/assets/img/favicon/favicon.ico" rel="icon" type="image/x-icon"/>
+
+    <!-- Icons -->
+    <link href="../assets/admin/vendor/fonts/fontawesome.css" rel="stylesheet"/>
+    <link href="../assets/admin/vendor/fonts/tabler-icons.css" rel="stylesheet"/>
+    <link href="../assets/admin/vendor/fonts/flag-icons.css" rel="stylesheet"/>
+    <!-- Core CSS -->
+    <link class="template-customizer-core-css" href="../assets/admin/vendor/css/rtl/core.css" rel="stylesheet"/>
+    <link class="template-customizer-theme-css" href="../assets/admin/vendor/css/rtl/theme-default.css" rel="stylesheet"/>
+    <link href="../assets/admin/css/demo.css" rel="stylesheet"/>
+    <!-- Vendors CSS -->
+    <link href="../assets/admin/vendor/libs/node-waves/node-waves.css" rel="stylesheet"/>
+    <link href="../assets/admin/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet"/>
+    <link href="../assets/admin/vendor/libs/typeahead-js/typeahead.css" rel="stylesheet"/>
+    <link href="../assets/admin/vendor/libs/apex-charts/apex-charts.css" rel="stylesheet"/>
+    <link href="../assets/admin/vendor/libs/swiper/swiper.css" rel="stylesheet"/>
+    <link href="../assets/admin/vendor/libs/datatables-bs5/datatables.bootstrap5.css" rel="stylesheet"/>
+    <link href="../assets/admin/vendor/libs/datatables-responsive-bs5/responsive.bootstrap5.css" rel="stylesheet"/>
+    <link href="../assets/admin/vendor/libs/datatables-checkboxes-jquery/datatables.checkboxes.css" rel="stylesheet"/>
+    <!-- Page CSS -->
+    <link href="../assets/admin/vendor/css/pages/cards-advance.css" rel="stylesheet"/>
+    <!-- Helpers -->
+    <script src="../assets/admin/vendor/js/helpers.js"></script>
+    <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+    <!--? Template customizer: To hide customizer set displayCustomizer value false in config.js.  -->
+    <script src="../assets/admin/vendor/js/template-customizer.js"></script>
+    <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
+    <script src="../assets/admin/js/config.js"></script>
+    <!-- Better experience of RTL -->
+    <link href="../assets/admin/vendor/css/rtl/rtl.css" rel="stylesheet"/>
+</head>
+
+<body>
+<!-- Layout wrapper -->
+<div class="layout-wrapper layout-content-navbar">
+    <div class="layout-container">
+        <!-- Menu -->
+        <aside class="layout-menu menu-vertical menu bg-menu-theme" id="layout-menu">
+            <div class="app-brand demo">
+                <a class="app-brand-link" href="index.html">
+                    <span class="app-brand-logo demo">
+                        <img src="../assets/admin/img/logo/logo-mini-sm.png" alt="logo">
+                    </span>
+                    <span class="app-brand-text demo menu-text fw-bold">زرین کد</span>
+                </a>
+                <a class="layout-menu-toggle menu-link text-large ms-auto" href="javascript:void(0);">
+                    <i class="ti ti-menu-2 d-none d-xl-block ti-sm align-middle"></i>
+                    <i class="ti ti-x d-block d-xl-none ti-sm align-middle"></i>
+                </a>
+            </div>
+            <div class="menu-inner-shadow"></div>
+            <ul class="menu-inner py-1">
+                <!-- Dashboards -->
+                <li class="menu-item">
+                    <a class="menu-link menu-toggle" href="index.html">
+                        <i class="menu-icon tf-icons fa fa-dashboard"></i>
+                        <div>داشبورد‌</div>
+                    </a>
+                </li>
+                <!-- Layouts -->
+                <li class="menu-item">
+                    <a class="menu-link menu-toggle" href="buy-template.html">
+                        <i class="menu-icon tf-icons fa fa-layer-group"></i>
+                        <div>خرید قالب</div>
+                    </a>
+                    <!-- <ul class="menu-sub">
+                        <li class="menu-item">
+                            <a class="menu-link" href="layouts-collapsed-menu.html">
+                                <div "Collapsed menu">منو جمع شده</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="layouts-content-navbar.html">
+                                <div "Content navbar">نوار ناوبری محتوا</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="layouts-content-navbar-with-sidebar.html">
+                                <div "Content nav + Sidebar">ناوبری محتوا + سایدبار</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="https://bytemaster.ir/demo/vuexy/landing/template/rtl/html/horizontal-menu-template" target="_blank">
+                                <div "Horizontal">منو افقی</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="layouts-without-menu.html">
+                                <div "Without menu">بدون منو</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="layouts-without-navbar.html">
+                                <div "Without navbar">بدون نوار ناوبری</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="layouts-fluid.html">
+                                <div "Fluid">محتوای تمام عرض</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="layouts-container.html">
+                                <div "Container">دربرگیرنده</div>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="layouts-blank.html">
+                                <div "Blank">صفحه خالی</div>
+                            </a>
+                        </li>
+                    </ul> -->
+                </li>
+                <!-- Front Pages -->
+                <li class="menu-item">
+                    <a class="menu-link menu-toggle" href="purchase-web.html">
+                        <i class="menu-icon tf-icons fa fa-archive"></i>
+                        <div>ثبت سایت</div>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-link" href="purchased-web.html">
+                        <i class="menu-icon tf-icons fa fa-archive"></i>
+                        <div>سایت های ثبت شده</div>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-link" href="Tariff.html">
+                        <i class="menu-icon tf-icons fa fa-box"></i>
+                        <div>تعرفه ها</div>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-link menu-toggle" href="financial.html">
+                        <i class="menu-icon fa fa-bar-chart"></i>
+                        <div>مالی</div>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-link menu-toggle" href="profile.html">
+                        <i class="menu-icon fa fa-bar-chart"></i>
+                        <div>پروفایل</div>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-link" href="support.html">
+                        <i class="fa fa-mail-bulk menu-icon tf-icons" aria-hidden="true"></i>
+                        <div>پشتیبانی</div>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+        <!-- / Menu -->
+        <!-- Layout container -->
+        <div class="layout-page">
+            <!-- Navbar -->
+            <nav class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme" id="layout-navbar">
+                <div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none">
+                    <a class="nav-item nav-link px-0 me-xl-4" href="javascript:void(0)">
+                        <i class="ti ti-menu-2 ti-sm"></i>
+                    </a>
+                </div>
+                <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
+                    <!-- Search -->
+                    <div class="navbar-nav align-items-center">
+                        <div class="nav-item navbar-search-wrapper mb-0">
+                            <a class="nav-item nav-link search-toggler d-flex align-items-center px-0" href="javascript:void(0);">
+                                <i class="ti ti-search ti-md me-2 h-mirror"></i>
+                                <span class="d-none d-md-inline-block text-muted">جستجو (/+Ctrl)</span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- /Search -->
+                    <ul class="navbar-nav flex-row align-items-center ms-auto">
+                        <!-- Quick links  -->
+                        <li class="nav-item dropdown-shortcuts navbar-dropdown dropdown me-2 me-xl-0">
+                            <a aria-expanded="false" class="nav-link dropdown-toggle hide-arrow" data-bs-auto-close="outside" data-bs-toggle="dropdown" href="javascript:void(0);">
+                                <i class="ti ti-layout-grid-add ti-md"></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-end py-0">
+                                <div class="dropdown-menu-header border-bottom">
+                                    <div class="dropdown-header d-flex align-items-center py-3">
+                                        <h5 class="text-body mb-0 me-auto">میانبرها</h5>
+                                        <a class="dropdown-shortcuts-add text-body" data-bs-placement="top" data-bs-toggle="tooltip" href="javascript:void(0)" title="افزودن میانبر">
+                                            <i class="ti ti-sm ti-apps"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="dropdown-shortcuts-list scrollable-container">
+                                    <div class="row row-bordered overflow-visible g-0">
+                                        <div class="dropdown-shortcuts-item col">
+                                            <span class="dropdown-shortcuts-icon rounded-circle mb-2 mt-1">
+                                                <i class="ti ti-calendar fs-4"></i>
+                                            </span>
+                                            <a class="stretched-link mb-0" href="app-calendar.html">تقویم</a>
+                                            <small class="text-muted mb-0">قرارهای ملاقات</small>
+                                        </div>
+                                        <div class="dropdown-shortcuts-item col">
+                                            <span class="dropdown-shortcuts-icon rounded-circle mb-2 mt-1">
+                                                <i class="ti ti-file-invoice fs-4"></i>
+                                            </span>
+                                            <a class="stretched-link mb-0" href="app-invoice-list.html">صورتحساب‌</a>
+                                            <small class="text-muted mb-0">مدیریت پرداخت‌ها</small>
+                                        </div>
+                                    </div>
+                                    <div class="row row-bordered overflow-visible g-0">
+                                        <div class="dropdown-shortcuts-item col">
+                                            <span class="dropdown-shortcuts-icon rounded-circle mb-2 mt-1">
+                                                <i class="ti ti-users fs-4"></i>
+                                            </span>
+                                            <a class="stretched-link mb-0" href="app-user-list.html">مشتریان</a>
+                                            <small class="text-muted mb-0">مدیریت کاربران</small>
+                                        </div>
+                                        <div class="dropdown-shortcuts-item col">
+                                            <span class="dropdown-shortcuts-icon rounded-circle mb-2 mt-1">
+                                                <i class="ti ti-lock fs-4"></i>
+                                            </span>
+                                            <a class="stretched-link mb-0" href="app-access-roles.html">سطح دسترسی</a>
+                                            <small class="text-muted mb-0">موارد امنیتی</small>
+                                        </div>
+                                    </div>
+                                    <div class="row row-bordered overflow-visible g-0">
+                                        <div class="dropdown-shortcuts-item col">
+                                            <span class="dropdown-shortcuts-icon rounded-circle mb-2 mt-1">
+                                                <i class="ti ti-chart-bar fs-4"></i>
+                                            </span>
+                                            <a class="stretched-link mb-0" href="index.html">داشبورد</a>
+                                            <small class="text-muted mb-0">گزارش آماری</small>
+                                        </div>
+                                        <div class="dropdown-shortcuts-item col">
+                                            <span class="dropdown-shortcuts-icon rounded-circle mb-2 mt-1">
+                                                <i class="ti ti-settings fs-4"></i>
+                                            </span>
+                                            <a class="stretched-link mb-0" href="pages-account-settings-account.html">تنظیمات</a>
+                                            <small class="text-muted mb-0">مدیریت سیستم</small>
+                                        </div>
+                                    </div>
+                                    <div class="row row-bordered overflow-visible g-0">
+                                        <div class="dropdown-shortcuts-item col">
+                                            <span class="dropdown-shortcuts-icon rounded-circle mb-2 mt-1">
+                                                <i class="ti ti-help fs-4"></i>
+                                            </span>
+                                            <a class="stretched-link mb-0" href="pages-faq.html">مرکز پشتیبانی</a>
+                                            <small class="text-muted mb-0">سوالات متداول و راهنما</small>
+                                        </div>
+                                        <div class="dropdown-shortcuts-item col">
+                                            <span class="dropdown-shortcuts-icon rounded-circle mb-2 mt-1">
+                                                <i class="ti ti-square fs-4"></i>
+                                            </span>
+                                            <a class="stretched-link mb-0" href="modal-examples.html">مُـدال‌ها</a>
+                                            <small class="text-muted mb-0">پاپ‌آپ‌های کاربردی</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Quick links -->
+                        <!-- Notification -->
+                        <li class="nav-item dropdown-notifications navbar-dropdown dropdown me-3 me-xl-1">
+                            <a aria-expanded="false" class="nav-link dropdown-toggle hide-arrow" data-bs-auto-close="outside" data-bs-toggle="dropdown" href="javascript:void(0);">
+                                <i class="ti ti-bell ti-md"></i>
+                                <span class="badge bg-danger rounded-pill badge-notifications">5</span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end py-0">
+                                <li class="dropdown-menu-header border-bottom">
+                                    <div class="dropdown-header d-flex align-items-center py-3">
+                                        <h5 class="text-body mb-0 me-auto">اعلانات</h5>
+                                        <a class="dropdown-notifications-all text-body" data-bs-placement="top" data-bs-toggle="tooltip" href="javascript:void(0)" title="همه خوانده شده">
+                                            <i class="ti ti-mail-opened fs-4"></i>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="dropdown-notifications-list scrollable-container">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item list-group-item-action dropdown-notifications-item">
+                                            <div class="d-flex">
+                                                <div class="flex-shrink-0 me-3">
+                                                    <div class="avatar">
+                                                        <img alt class="h-auto rounded-circle" src="../assets/admin/img/avatars/1.png"/>
+                                                    </div>
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    <h6 class="mb-2">تبریک به شما 🎉</h6>
+                                                    <p class="mb-1">نشان برترین فروشنده ماه رو گرفتید</p>
+                                                    <small class="text-muted">الان</small>
+                                                </div>
+                                                <div class="flex-shrink-0 dropdown-notifications-actions">
+                                                    <a class="dropdown-notifications-read" href="javascript:void(0)">
+                                                        <span class="badge badge-dot"></span>
+                                                    </a>
+                                                    <a class="dropdown-notifications-archive" href="javascript:void(0)">
+                                                        <span class="ti ti-x"></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item list-group-item-action dropdown-notifications-item">
+                                            <div class="d-flex">
+                                                <div class="flex-shrink-0 me-3">
+                                                    <div class="avatar">
+                                                        <span class="avatar-initial rounded-circle bg-label-danger">ن‌م</span>
+                                                    </div>
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    <h6 class="mb-2">نوید محمدزاده</h6>
+                                                    <p class="mb-1">درخواست شمارا پذیرفت.</p>
+                                                    <small class="text-muted">1 ساعت قبل</small>
+                                                </div>
+                                                <div class="flex-shrink-0 dropdown-notifications-actions">
+                                                    <a class="dropdown-notifications-read" href="javascript:void(0)">
+                                                        <span class="badge badge-dot"></span>
+                                                    </a>
+                                                    <a class="dropdown-notifications-archive" href="javascript:void(0)">
+                                                        <span class="ti ti-x"></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item list-group-item-action dropdown-notifications-item marked-as-read">
+                                            <div class="d-flex">
+                                                <div class="flex-shrink-0 me-3">
+                                                    <div class="avatar">
+                                                        <img alt class="h-auto rounded-circle" src="../assets/admin/img/avatars/2.png"/>
+                                                    </div>
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    <h6 class="mb-2">پیام جدید از بهاره ✉️</h6>
+                                                    <p class="mb-1">شما یک پیام جدید از بهاره افشاری دارید</p>
+                                                    <small class="text-muted">12 ساعت قبل</small>
+                                                </div>
+                                                <div class="flex-shrink-0 dropdown-notifications-actions">
+                                                    <a class="dropdown-notifications-read" href="javascript:void(0)">
+                                                        <span class="badge badge-dot"></span>
+                                                    </a>
+                                                    <a class="dropdown-notifications-archive" href="javascript:void(0)">
+                                                        <span class="ti ti-x"></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item list-group-item-action dropdown-notifications-item">
+                                            <div class="d-flex">
+                                                <div class="flex-shrink-0 me-3">
+                                                    <div class="avatar">
+                                                        <span class="avatar-initial rounded-circle bg-label-success">
+                                                            <i class="ti ti-shopping-cart"></i>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    <h6 class="mb-2">ایول! سفارش جدید داری 🛒</h6>
+                                                    <p class="mb-1">شرکت یلدا سفارشی جدید ثبت کرد</p>
+                                                    <small class="text-muted">امروز</small>
+                                                </div>
+                                                <div class="flex-shrink-0 dropdown-notifications-actions">
+                                                    <a class="dropdown-notifications-read" href="javascript:void(0)">
+                                                        <span class="badge badge-dot"></span>
+                                                    </a>
+                                                    <a class="dropdown-notifications-archive" href="javascript:void(0)">
+                                                        <span class="ti ti-x"></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item list-group-item-action dropdown-notifications-item marked-as-read">
+                                            <div class="d-flex">
+                                                <div class="flex-shrink-0 me-3">
+                                                    <div class="avatar">
+                                                        <img alt class="h-auto rounded-circle" src="../assets/admin/img/avatars/9.png"/>
+                                                    </div>
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    <h6 class="mb-2">اپلیکیشن بروزرسانی شد 🚀</h6>
+                                                    <p class="mb-1">پروژه شما باموفقیت آپدیت شد.</p>
+                                                    <small class="text-muted">دیروز</small>
+                                                </div>
+                                                <div class="flex-shrink-0 dropdown-notifications-actions">
+                                                    <a class="dropdown-notifications-read" href="javascript:void(0)">
+                                                        <span class="badge badge-dot"></span>
+                                                    </a>
+                                                    <a class="dropdown-notifications-archive" href="javascript:void(0)">
+                                                        <span class="ti ti-x"></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item list-group-item-action dropdown-notifications-item marked-as-read">
+                                            <div class="d-flex">
+                                                <div class="flex-shrink-0 me-3">
+                                                    <div class="avatar">
+                                                        <span class="avatar-initial rounded-circle bg-label-success">
+                                                            <i class="ti ti-chart-pie"></i>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    <h6 class="mb-2">گزارش ماهانه دردسترس است</h6>
+                                                    <p class="mb-1">گزارش درآمد ماه شهریور آماده است</p>
+                                                    <small class="text-muted">2 روز قبل</small>
+                                                </div>
+                                                <div class="flex-shrink-0 dropdown-notifications-actions">
+                                                    <a class="dropdown-notifications-read" href="javascript:void(0)">
+                                                        <span class="badge badge-dot"></span>
+                                                    </a>
+                                                    <a class="dropdown-notifications-archive" href="javascript:void(0)">
+                                                        <span class="ti ti-x"></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item list-group-item-action dropdown-notifications-item marked-as-read">
+                                            <div class="d-flex">
+                                                <div class="flex-shrink-0 me-3">
+                                                    <div class="avatar">
+                                                        <img alt class="h-auto rounded-circle" src="../assets/admin/img/avatars/5.png"/>
+                                                    </div>
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    <h6 class="mb-2">ارسال درخواست همکاری</h6>
+                                                    <p class="mb-1">حسام درخواست همکاری فرستاد</p>
+                                                    <small class="text-muted">1 هفته قبل</small>
+                                                </div>
+                                                <div class="flex-shrink-0 dropdown-notifications-actions">
+                                                    <a class="dropdown-notifications-read" href="javascript:void(0)">
+                                                        <span class="badge badge-dot"></span>
+                                                    </a>
+                                                    <a class="dropdown-notifications-archive" href="javascript:void(0)">
+                                                        <span class="ti ti-x"></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item list-group-item-action dropdown-notifications-item">
+                                            <div class="d-flex">
+                                                <div class="flex-shrink-0 me-3">
+                                                    <div class="avatar">
+                                                        <img alt class="h-auto rounded-circle" src="../assets/admin/img/avatars/6.png"/>
+                                                    </div>
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    <h6 class="mb-2">پیام جدید از ترانه</h6>
+                                                    <p class="mb-1">شما یک پیام جدید دارید</p>
+                                                    <small class="text-muted">1 ماه قبل</small>
+                                                </div>
+                                                <div class="flex-shrink-0 dropdown-notifications-actions">
+                                                    <a class="dropdown-notifications-read" href="javascript:void(0)">
+                                                        <span class="badge badge-dot"></span>
+                                                    </a>
+                                                    <a class="dropdown-notifications-archive" href="javascript:void(0)">
+                                                        <span class="ti ti-x"></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item list-group-item-action dropdown-notifications-item marked-as-read">
+                                            <div class="d-flex">
+                                                <div class="flex-shrink-0 me-3">
+                                                    <div class="avatar">
+                                                        <span class="avatar-initial rounded-circle bg-label-warning">
+                                                            <i class="ti ti-alert-triangle"></i>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    <h6 class="mb-2">میزان مصرف CPU بالاست</h6>
+                                                    <p class="mb-1">درصد استفاده از CPU درحال حاضر 90%</p>
+                                                    <small class="text-muted">1 ماه قبل</small>
+                                                </div>
+                                                <div class="flex-shrink-0 dropdown-notifications-actions">
+                                                    <a class="dropdown-notifications-read" href="javascript:void(0)">
+                                                        <span class="badge badge-dot"></span>
+                                                    </a>
+                                                    <a class="dropdown-notifications-archive" href="javascript:void(0)">
+                                                        <span class="ti ti-x"></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-menu-footer border-top">
+                                    <a class="dropdown-item d-flex justify-content-center text-primary p-2 h-px-40 mb-1 align-items-center" href="javascript:void(0);">
+                                        نمایش همه اعلانات
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!--/ Notification -->
+                        <!-- User -->
+                        <li class="nav-item navbar-dropdown dropdown-user dropdown">
+                            <a class="nav-link dropdown-toggle hide-arrow" data-bs-toggle="dropdown" href="javascript:void(0);">
+                                <div class="avatar avatar-online">
+                                    <img alt class="h-auto rounded-circle" src="../assets/admin/img/avatars/1.png"/>
+                                </div>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li>
+                                    <a class="dropdown-item" href="pages-account-settings-account.html">
+                                        <div class="d-flex">
+                                            <div class="flex-shrink-0 me-3">
+                                                <div class="avatar avatar-online">
+                                                    <img alt class="h-auto rounded-circle" src="../assets/admin/img/avatars/1.png"/>
+                                                </div>
+                                            </div>
+                                            <div class="flex-grow-1">
+                                                <span class="fw-semibold d-block mb-1">نوید محمدزاده</span>
+                                                <small class="text-muted">مدیرکل</small>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <div class="dropdown-divider"></div>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="pages-profile-user.html">
+                                        <i class="ti ti-user-check me-2 ti-sm"></i>
+                                        <span class="align-middle">پروفایل من</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="pages-account-settings-account.html">
+                                        <i class="ti ti-settings me-2 ti-sm"></i>
+                                        <span class="align-middle">تنظیمات</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="pages-account-settings-billing.html">
+                                        <span class="d-flex align-items-center align-middle">
+                                            <i class="flex-shrink-0 ti ti-credit-card me-2 ti-sm"></i>
+                                            <span class="flex-grow-1 align-middle">خریدها</span>
+                                            <span class="flex-shrink-0 badge badge-center rounded-pill bg-label-danger w-px-20 h-px-20">2
+                                            </span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <div class="dropdown-divider"></div>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="pages-faq.html">
+                                        <i class="ti ti-help me-2 ti-sm"></i>
+                                        <span class="align-middle">سوالات متداول</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="pages-pricing.html">
+                                        <i class="ti ti-currency-dollar me-2 ti-sm"></i>
+                                        <span class="align-middle">قیمت گذاری</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <div class="dropdown-divider"></div>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="auth-login-cover.html" target="_blank">
+                                        <i class="ti ti-logout me-2 ti-sm"></i>
+                                        <span class="align-middle">خروج از حساب</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!--/ User -->
+                    </ul>
+                </div>
+                <!-- Search Small Screens -->
+                <div class="navbar-search-wrapper search-input-wrapper d-none">
+                    <input aria-label="جستجو..." class="form-control search-input container-xxl border-0" placeholder="جستجو..." type="text"/>
+                    <i class="ti ti-x ti-sm search-toggler cursor-pointer"></i>
+                </div>
+            </nav>
+            <!-- / Navbar -->
+            <!-- Content wrapper -->
+            <div class="content-wrapper">
+                <!-- Content -->
+                <div class="container-xxl flex-grow-1 container-p-y">
+                    <div class="app-email card">
+                        <div class="row g-0">
+                            <!-- Email Sidebar -->
+                            <div class="col app-email-sidebar border-end flex-grow-0" id="app-email-sidebar">
+                                <div class="btn-compost-wrapper d-grid">
+                                    <button class="btn btn-primary btn-compose waves-effect waves-light" data-bs-target="#emailComposeSidebar" data-bs-toggle="modal" id="emailComposeSidebarLabel">
+                                        ارسال ایمیل
+                                    </button>
+                                </div>
+                                <!-- Email Filters -->
+                                <div class="email-filters py-2 ps ps__rtl ps--active-y">
+                                    <!-- Email Filters: Folder -->
+                                    <ul class="email-filter-folders list-unstyled mb-4">
+                                        <li class="active d-flex justify-content-between" data-target="inbox">
+                                            <a class="d-flex flex-wrap align-items-center" href="javascript:void(0);">
+                                                <i class="ti ti-mail ti-sm"></i>
+                                                <span class="align-middle ms-2">صندوق ورودی</span>
+                                            </a>
+                                            <div class="badge bg-label-primary rounded-pill badge-center">4</div>
+                                        </li>
+                                        <li class="d-flex" data-target="sent">
+                                            <a class="d-flex flex-wrap align-items-center" href="javascript:void(0);">
+                                                <i class="ti ti-send ti-sm"></i>
+                                                <span class="align-middle ms-2">ارسال شد</span>
+                                            </a>
+                                        </li>
+                                        <li class="d-flex" data-target="draft">
+                                            <a class="d-flex flex-wrap align-items-center" href="javascript:void(0);">
+                                                <i class="ti ti-file ti-sm"></i>
+                                                <span class="align-middle ms-2">پیش نویس</span>
+                                            </a>
+                                        </li>
+                                        <li class="d-flex justify-content-between" data-target="starred">
+                                            <a class="d-flex flex-wrap align-items-center" href="javascript:void(0);">
+                                                <i class="ti ti-star ti-sm"></i>
+                                                <span class="align-middle ms-2">ستاره دار</span>
+                                            </a>
+                                            <div class="badge bg-label-warning rounded-pill badge-center">10</div>
+                                        </li>
+                                        <li class="d-flex align-items-center" data-target="spam">
+                                            <a class="d-flex flex-wrap align-items-center" href="javascript:void(0);">
+                                                <i class="ti ti-info-circle ti-sm"></i>
+                                                <span class="align-middle ms-2">هرزنامه</span>
+                                            </a>
+                                        </li>
+                                        <li class="d-flex align-items-center" data-target="trash">
+                                            <a class="d-flex flex-wrap align-items-center" href="javascript:void(0);">
+                                                <i class="ti ti-trash ti-sm"></i>
+                                                <span class="align-middle ms-2">حذف شده&zwnj;ها</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <!-- Email Filters: Labels -->
+                                    <div class="email-filter-labels">
+                                        <small class="fw-normal text-uppercase text-muted m-4">برچسب ها</small>
+                                        <ul class="list-unstyled mb-0 mt-2">
+                                            <li data-target="work">
+                                                <a href="javascript:void(0);">
+                                                    <span class="badge badge-dot bg-success"></span>
+                                                    <span class="align-middle ms-2">کار</span>
+                                                </a>
+                                            </li>
+                                            <li data-target="company">
+                                                <a href="javascript:void(0);">
+                                                    <span class="badge badge-dot bg-primary"></span>
+                                                    <span class="align-middle ms-2">شرکت</span>
+                                                </a>
+                                            </li>
+                                            <li data-target="important">
+                                                <a href="javascript:void(0);">
+                                                    <span class="badge badge-dot bg-info"></span>
+                                                    <span class="align-middle ms-2">مهم</span>
+                                                </a>
+                                            </li>
+                                            <li data-target="private">
+                                                <a href="javascript:void(0);">
+                                                    <span class="badge badge-dot bg-danger"></span>
+                                                    <span class="align-middle ms-2">خصوصی</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!--/ Email Filters -->
+                                <div class="ps__rail-x" style="left: 0px; bottom: 0px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__rail-y" style="top: 0px; height: 328px; right: 246px;"><div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 220px;"></div></div></div>
+                            </div>
+                            <!--/ Email Sidebar -->
+                            <!-- Emails List -->
+                            <div class="col app-emails-list">
+                                <div class="shadow-none border-0">
+                                    <div class="emails-list-header p-3 py-lg-3 py-2">
+                                        <!-- Email List: Search -->
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="d-flex align-items-center w-100">
+                                                <i class="ti ti-menu-2 ti-sm cursor-pointer d-block d-lg-none me-3" data-bs-toggle="sidebar" data-overlay="" data-target="#app-email-sidebar"></i>
+                                                <div class="mb-0 mb-lg-2 w-100">
+                                                    <div class="input-group input-group-merge shadow-none">
+                                                        <span class="input-group-text border-0 ps-0" id="email-search">
+                                                            <i class="ti ti-search h-mirror"></i>
+                                                        </span>
+                                                        <input aria-describedby="email-search" aria-label="جستجوی ایمیل" class="form-control email-search-input border-0" placeholder="جستجوی ایمیل" type="text">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex align-items-center mb-0 mb-md-2">
+                                                <i class="ti ti-rotate-clockwise ti-sm rotate-180 scaleX-n1-rtl cursor-pointer email-refresh me-2"></i>
+                                                <div class="dropdown d-flex align-self-center">
+                                                    <button aria-expanded="false" aria-haspopup="true" class="btn p-0" data-bs-toggle="dropdown" id="emailsActions" type="button">
+                                                        <i class="ti ti-dots-vertical ti-sm"></i>
+                                                    </button>
+                                                    <div aria-labelledby="emailsActions" class="dropdown-menu dropdown-menu-end">
+                                                        <a class="dropdown-item" href="javascript:void(0)">خوانده شده</a>
+                                                        <a class="dropdown-item" href="javascript:void(0)">خوانده نشده</a>
+                                                        <a class="dropdown-item" href="javascript:void(0)">حذف</a>
+                                                        <a class="dropdown-item" href="javascript:void(0)">بایگانی</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr class="mx-n3 emails-list-header-hr">
+                                        <!-- Email List: Actions -->
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="d-flex align-items-center">
+                                                <div class="form-check mb-0 me-2">
+                                                    <input class="form-check-input" id="email-select-all" type="checkbox">
+                                                    <label class="form-check-label" for="email-select-all"></label>
+                                                </div>
+                                                <i class="ti ti-trash ti-sm email-list-delete cursor-pointer me-2"></i>
+                                                <i class="ti ti-mail-opened ti-sm email-list-read cursor-pointer me-2"></i>
+                                                <div class="dropdown me-2">
+                                                    <button aria-expanded="false" aria-haspopup="true" class="btn p-0" data-bs-toggle="dropdown" id="dropdownMenuFolderOne" type="button">
+                                                        <i class="ti ti-folder ti-sm"></i>
+                                                    </button>
+                                                    <div aria-labelledby="dropdownMenuFolderOne" class="dropdown-menu dropdown-menu-end">
+                                                        <a class="dropdown-item" href="javascript:void(0)">
+                                                            <i class="ti ti-info-circle ti-xs me-1"></i>
+                                                            <span class="align-middle">هرزنامه ها</span>
+                                                        </a>
+                                                        <a class="dropdown-item" href="javascript:void(0)">
+                                                            <i class="ti ti-file ti-xs me-1"></i>
+                                                            <span class="align-middle">پیش نویس</span>
+                                                        </a>
+                                                        <a class="dropdown-item" href="javascript:void(0)">
+                                                            <i class="ti ti-trash ti-xs me-1"></i>
+                                                            <span class="align-middle">حذف شده&zwnj;ها</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="dropdown">
+                                                    <button aria-expanded="false" aria-haspopup="true" class="btn p-0" data-bs-toggle="dropdown" id="dropdownLabelOne" type="button">
+                                                        <i class="ti ti-tag ti-sm"></i>
+                                                    </button>
+                                                    <div aria-labelledby="dropdownLabelOne" class="dropdown-menu dropdown-menu-end">
+                                                        <a class="dropdown-item" href="javascript:void(0)">
+                                                            <i class="badge badge-dot bg-success me-1"></i>
+                                                            <span class="align-middle">کارگاه</span>
+                                                        </a>
+                                                        <a class="dropdown-item" href="javascript:void(0)">
+                                                            <i class="badge badge-dot bg-primary me-1"></i>
+                                                            <span class="align-middle">شرکت</span>
+                                                        </a>
+                                                        <a class="dropdown-item" href="javascript:void(0)">
+                                                            <i class="badge badge-dot bg-info me-1"></i>
+                                                            <span class="align-middle">مهم</span>
+                                                        </a>
+                                                        <a class="dropdown-item" href="javascript:void(0)">
+                                                            <i class="badge badge-dot bg-danger me-1"></i>
+                                                            <span class="align-middle">خصوصی</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="email-pagination d-sm-flex d-none align-items-center flex-wrap justify-content-between justify-sm-content-end">
+                                                <span class="d-sm-block d-none mx-3 text-muted">
+                                                    <bdi>1-10</bdi>
+                                                    از 653
+                                                </span>
+                                                <i class="email-prev ti ti-chevron-left ti-sm scaleX-n1-rtl cursor-pointer text-muted me-2"></i>
+                                                <i class="email-next ti ti-chevron-right ti-sm scaleX-n1-rtl cursor-pointer"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr class="container-m-nx m-0">
+                                    <!-- Email List: Items -->
+                                    <div class="email-list pt-0 ps ps__rtl ps--active-y">
+                                        <ul class="list-unstyled m-0">
+                                            <li class="email-list-item" data-bs-toggle="sidebar" data-starred="true" data-target="#app-email-view">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="form-check mb-0">
+                                                        <input class="email-list-item-input form-check-input" id="email-1" type="checkbox">
+                                                        <label class="form-check-label" for="email-1"></label>
+                                                    </div>
+                                                    <i class="email-list-item-bookmark ti ti-star ti-sm d-sm-inline-block d-none cursor-pointer ms-2 me-3"></i>
+                                                    <img alt="کاربر-آواتار" class="d-block flex-shrink-0 rounded-circle me-sm-3 me-2" height="32" src="../assets/admin/img/avatars/1.png" width="32">
+                                                    <div class="email-list-item-content ms-2 ms-sm-0 me-2">
+                                                        <span class="h6 email-list-item-username me-2">محمد حسینی</span>
+                                                        <span class="email-list-item-subject d-xl-inline-block d-block"> آیندهٔ برنامه نویسی کوانتومی را بر اساس افزایش قدرت محاسباتی موقعیت می&zwnj;دهد.</span>
+                                                    </div>
+                                                    <div class="email-list-item-meta ms-auto d-flex align-items-center">
+                                                        <span class="email-list-item-label badge badge-dot bg-danger d-none d-md-inline-block me-2" data-label="private"></span>
+                                                        <small class="email-list-item-time text-muted">08:40 ق.ظ</small>
+                                                        <ul class="list-inline email-list-item-actions text-nowrap">
+                                                            <li class="list-inline-item email-read">
+                                                                <i class="ti ti-mail-opened ti-sm"></i>
+                                                            </li>
+                                                            <li class="list-inline-item email-delete">
+                                                                <i class="ti ti-trash ti-sm"></i>
+                                                            </li>
+                                                            <li class="list-inline-item">
+                                                                <i class="ti ti-archive ti-sm"></i>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="email-list-item email-marked-read" data-bs-toggle="sidebar" data-sent="true" data-target="#app-email-view">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="form-check mb-0">
+                                                        <input class="email-list-item-input form-check-input" id="email-2" type="checkbox">
+                                                        <label class="form-check-label" for="email-2"></label>
+                                                    </div>
+                                                    <i class="email-list-item-bookmark ti ti-star ti-sm d-sm-inline-block d-none cursor-pointer ms-2 me-3"></i>
+                                                    <img alt="کاربر-آواتار"
+                                                        class="d-block flex-shrink-0 rounded-circle me-sm-3 me-2"
+                                                        height="32" src="../assets/admin/img/avatars/2.png" width="32">
+                                                    <div class="email-list-item-content ms-2 ms-sm-0 me-2">
+                                                        <span class="h6 email-list-item-username me-2">نازنین کریمی</span>
+                                                        <span class="email-list-item-subject d-xl-inline-block d-block"> اصول SOLID: راهنمایی برای نوشتن کد منظم و قابل نگهداری.</span>
+                                                    </div>
+                                                    <div class="email-list-item-meta ms-auto d-flex align-items-center">
+                                                        <span class="email-list-item-label badge badge-dot bg-info d-none d-md-inline-block me-2" data-label="important"></span>
+                                                        <small class="email-list-item-time text-muted">10:12 ق.ظ</small>
+                                                        <ul class="list-inline email-list-item-actions text-nowrap">
+                                                            <li class="list-inline-item email-unread">
+                                                                <i class="ti ti-mail ti-sm"></i>
+                                                            </li>
+                                                            <li class="list-inline-item email-delete">
+                                                                <i class="ti ti-trash ti-sm"></i>
+                                                            </li>
+                                                            <li class="list-inline-item">
+                                                                <i class="ti ti-archive ti-sm"></i>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="email-list-item" data-bs-toggle="sidebar" data-draft="true" data-target="#app-email-view">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="form-check mb-0">
+                                                        <input class="email-list-item-input form-check-input" id="email-3" type="checkbox">
+                                                        <label class="form-check-label" for="email-3"></label>
+                                                    </div>
+                                                    <i class="email-list-item-bookmark ti ti-star ti-sm d-sm-inline-block d-none cursor-pointer ms-2 me-3"></i>
+                                                    <div class="avatar avatar-sm d-block flex-shrink-0 me-sm-3 me-2">
+                                                        <span class="avatar-initial rounded-circle bg-label-success">اع</span>
+                                                    </div>
+                                                    <div class="email-list-item-content ms-2 ms-sm-0 me-2">
+                                                        <span class="h6 email-list-item-username me-2">امیر عبداللهی</span>
+                                                        <span class="email-list-item-subject d-xl-inline-block d-block"> برنامه&zwnj;نویسی React: از تجربهٔ کاربری بهینه تا مدیریت وضعیت موازی..</span>
+                                                    </div>
+                                                    <div class="email-list-item-meta ms-auto d-flex align-items-center">
+                                                        <span class="email-list-item-attachment ti ti-paperclip ti-xs cursor-pointer me-2 float-end float-sm-none"></span>
+                                                        <span class="email-list-item-label badge badge-dot bg-primary d-none d-md-inline-block me-2" data-label="company"></span>
+                                                        <small class="email-list-item-time text-muted">12:44 ق.ظ</small>
+                                                        <ul class="list-inline email-list-item-actions text-nowrap">
+                                                            <li class="list-inline-item email-read">
+                                                                <i class="ti ti-mail-opened ti-sm"></i>
+                                                            </li>
+                                                            <li class="list-inline-item email-delete">
+                                                                <i class="ti ti-trash ti-sm"></i>
+                                                            </li>
+                                                            <li class="list-inline-item">
+                                                                <i class="ti ti-archive ti-sm"></i>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="email-list-item email-marked-read" data-bs-toggle="sidebar" data-starred="true" data-target="#app-email-view">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="form-check mb-0">
+                                                        <input class="email-list-item-input form-check-input" id="email-4" type="checkbox">
+                                                        <label class="form-check-label" for="email-4"></label>
+                                                    </div>
+                                                    <i class="email-list-item-bookmark ti ti-star ti-sm d-sm-inline-block d-none cursor-pointer ms-2 me-3"></i>
+                                                    <img alt="کاربر-آواتار" class="d-block flex-shrink-0 rounded-circle me-sm-3 me-2" height="32" src="../assets/admin/img/avatars/3.png" width="32">
+                                                    <div class="email-list-item-content ms-2 ms-sm-0 me-2">
+                                                        <span class="h6 email-list-item-username me-2">محمدعلی آقایی</span>
+                                                        <span class="email-list-item-subject d-xl-inline-block d-block"> آشنایی با کاربردهای جدید Python در هوش مصنوعی و یادگیری عمیق.</span>
+                                                    </div>
+                                                    <div class="email-list-item-meta ms-auto d-flex align-items-center">
+                                                        <span class="email-list-item-label badge badge-dot bg-success d-none d-md-inline-block me-2" data-label="work"></span>
+                                                        <small class="email-list-item-time text-muted">دیروز</small>
+                                                        <ul class="list-inline email-list-item-actions text-nowrap">
+                                                            <li class="list-inline-item email-unread">
+                                                                <i class="ti ti-mail ti-sm"></i>
+                                                            </li>
+                                                            <li class="list-inline-item email-delete">
+                                                                <i class="ti ti-trash ti-sm"></i>
+                                                            </li>
+                                                            <li class="list-inline-item">
+                                                                <i class="ti ti-archive ti-sm"></i>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="email-list-item email-marked-read" data-bs-toggle="sidebar" data-spam="true" data-target="#app-email-view">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="form-check mb-0">
+                                                        <input class="email-list-item-input form-check-input" id="email-5" type="checkbox">
+                                                        <label class="form-check-label" for="email-5"></label>
+                                                    </div>
+                                                    <i class="email-list-item-bookmark ti ti-star ti-sm d-sm-inline-block d-none cursor-pointer ms-2 me-3"></i>
+                                                    <img alt="کاربر-آواتار" class="d-block flex-shrink-0 rounded-circle me-sm-3 me-2" height="32" src="../assets/admin/img/avatars/4.png" width="32">
+                                                    <div class="email-list-item-content ms-2 ms-sm-0 me-2">
+                                                        <span class="h6 email-list-item-username me-2">سمیرا جلالی</span>
+                                                        <span class="email-list-item-subject d-xl-inline-block d-block"> طراحی UI/UX: ارتقاء تجربهٔ کاربری از طریق برنامه&zwnj;نویسی وب.</span>
+                                                    </div>
+                                                    <div class="email-list-item-meta ms-auto d-flex align-items-center">
+                                                        <span class="email-list-item-label badge badge-dot bg-primary d-none d-md-inline-block me-2" data-label="company"></span>
+                                                        <small class="email-list-item-time text-muted">دیروز</small>
+                                                        <ul class="list-inline email-list-item-actions text-nowrap">
+                                                            <li class="list-inline-item email-unread">
+                                                                <i class="ti ti-mail ti-sm"></i>
+                                                            </li>
+                                                            <li class="list-inline-item email-delete">
+                                                                <i class="ti ti-trash ti-sm"></i>
+                                                            </li>
+                                                            <li class="list-inline-item">
+                                                                <i class="ti ti-archive ti-sm"></i>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="email-list-item" data-bs-toggle="sidebar" data-target="#app-email-view" data-trash="true">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="form-check mb-0">
+                                                        <input class="email-list-item-input form-check-input" id="email-6" type="checkbox">
+                                                        <label class="form-check-label" for="email-6"></label>
+                                                    </div>
+                                                    <i class="email-list-item-bookmark ti ti-star ti-sm d-sm-inline-block d-none cursor-pointer ms-2 me-3"></i>
+                                                    <div class="avatar avatar-sm d-block flex-shrink-0 me-sm-3 me-2">
+                                                        <span class="avatar-initial rounded-circle bg-label-info">زهـ</span>
+                                                    </div>
+                                                    <div class="email-list-item-content ms-2 ms-sm-0 me-2">
+                                                        <span class="h6 email-list-item-username me-2">زهرا علیزاده</span>
+                                                        <span class="email-list-item-subject d-xl-inline-block d-block"> توسعهٔ محیط&zwnj;های اجرای متن&zwnj;باز با استفاده از Docker.
+                                                        </span>
+                                                    </div>
+                                                    <div class="email-list-item-meta ms-auto d-flex align-items-center">
+                                                        <span class="email-list-item-label badge badge-dot bg-info d-none d-md-inline-block me-2" data-label="work"></span>
+                                                        <small class="email-list-item-time text-muted">5 می</small>
+                                                        <ul class="list-inline email-list-item-actions text-nowrap">
+                                                            <li class="list-inline-item email-read">
+                                                                <i class="ti ti-mail-opened ti-sm"></i>
+                                                            </li>
+                                                            <li class="list-inline-item email-delete">
+                                                                <i class="ti ti-trash ti-sm"></i>
+                                                            </li>
+                                                            <li class="list-inline-item">
+                                                                <i class="ti ti-archive ti-sm"></i>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="email-list-item email-marked-read" data-bs-toggle="sidebar" data-draft="true" data-target="#app-email-view">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="form-check mb-0">
+                                                        <input class="email-list-item-input form-check-input" id="email-7" type="checkbox">
+                                                        <label class="form-check-label" for="email-7"></label>
+                                                    </div>
+                                                    <i class="email-list-item-bookmark ti ti-star ti-sm d-sm-inline-block d-none cursor-pointer ms-2 me-3"></i>
+                                                    <img alt="کاربر-آواتار" class="d-block flex-shrink-0 rounded-circle me-sm-3 me-2" height="32" src="../assets/admin/img/avatars/5.png" width="32">
+                                                    <div class="email-list-item-content ms-2 ms-sm-0 me-2">
+                                                        <span class="h6 email-list-item-username me-2">امیر عبداللهی</span>
+                                                        <span class="email-list-item-subject d-xl-inline-block d-block"> اصول مهندسی نرم&zwnj;افزار: از مدیریت پروژه تا آزمون و ارزیابی.</span>
+                                                    </div>
+                                                    <div class="email-list-item-meta ms-auto d-flex align-items-center">
+                                                        <span class="email-list-item-label badge badge-dot bg-primary d-none d-md-inline-block me-2" data-label="company"></span>
+                                                        <small class="email-list-item-time text-muted">15 می</small>
+                                                        <ul class="list-inline email-list-item-actions text-nowrap">
+                                                            <li class="list-inline-item email-unread">
+                                                                <i class="ti ti-mail ti-sm"></i>
+                                                            </li>
+                                                            <li class="list-inline-item email-delete">
+                                                                <i class="ti ti-trash ti-sm"></i>
+                                                            </li>
+                                                            <li class="list-inline-item">
+                                                                <i class="ti ti-archive ti-sm"></i>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="email-list-item email-marked-read" data-bs-toggle="sidebar" data-starred="true" data-target="#app-email-view">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="form-check mb-0">
+                                                        <input class="email-list-item-input form-check-input" id="email-8" type="checkbox">
+                                                        <label class="form-check-label" for="email-8"></label>
+                                                    </div>
+                                                    <i class="email-list-item-bookmark ti ti-star ti-sm d-sm-inline-block d-none cursor-pointer ms-2 me-3"></i>
+                                                    <img alt="کاربر-آواتار" class="d-block flex-shrink-0 rounded-circle me-sm-3 me-2" height="32" src="../assets/admin/img/avatars/6.png" width="32">
+                                                    <div class="email-list-item-content ms-2 ms-sm-0 me-2">
+                                                        <span class="h6 email-list-item-username me-2">فاطمه رضایی</span>
+                                                        <span class="email-list-item-subject d-xl-inline-block d-block"> آشنایی با مفاهیم Blockchain و تأثیر آن بر آیندهٔ فناوری.</span>
+                                                    </div>
+                                                    <div class="email-list-item-meta ms-auto d-flex align-items-center">
+                                                        <span class="email-list-item-attachment ti ti-paperclip ti-xs cursor-pointer me-2 float-end float-sm-none"></span>
+                                                        <span class="email-list-item-label badge badge-dot bg-danger d-none d-md-inline-block me-2" data-label="private"></span>
+                                                        <small class="email-list-item-time text-muted">20 بهمن</small>
+                                                        <ul class="list-inline email-list-item-actions text-nowrap">
+                                                            <li class="list-inline-item email-unread">
+                                                                <i class="ti ti-mail ti-sm"></i>
+                                                            </li>
+                                                            <li class="list-inline-item email-delete">
+                                                                <i class="ti ti-trash ti-sm"></i>
+                                                            </li>
+                                                            <li class="list-inline-item">
+                                                                <i class="ti ti-archive ti-sm"></i>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="email-list-item email-marked-read" data-bs-toggle="sidebar" data-spam="true" data-target="#app-email-view">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="form-check mb-0">
+                                                        <input class="email-list-item-input form-check-input" id="email-9" type="checkbox">
+                                                        <label class="form-check-label" for="email-9"></label>
+                                                    </div>
+                                                    <i class="email-list-item-bookmark ti ti-star ti-sm d-sm-inline-block d-none cursor-pointer ms-2 me-3"></i>
+                                                    <div class="avatar avatar-sm d-block flex-shrink-0 me-sm-3 me-2">
+                                                        <span class="avatar-initial rounded-circle bg-label-danger">م&zwnj;ر</span>
+                                                    </div>
+                                                    <div class="email-list-item-content ms-2 ms-sm-0 me-2">
+                                                        <span class="h6 email-list-item-username me-2">محمد رضا میرزایی</span>
+                                                        <span class="email-list-item-subject d-xl-inline-block d-block"> بهینه&zwnj;سازی کدهای PHP: از سرعت اجرا تا امنیت و بهره&zwnj;وری.</span>
+                                                    </div>
+                                                    <div class="email-list-item-meta ms-auto d-flex align-items-center">
+                                                        <span class="email-list-item-label badge badge-dot bg-info d-none d-md-inline-block me-2" data-label="important"></span>
+                                                        <small class="email-list-item-time text-muted">25 خرداد</small>
+                                                        <ul class="list-inline email-list-item-actions text-nowrap">
+                                                            <li class="list-inline-item email-unread">
+                                                                <i class="ti ti-mail ti-sm"></i>
+                                                            </li>
+                                                            <li class="list-inline-item email-delete">
+                                                                <i class="ti ti-trash ti-sm"></i>
+                                                            </li>
+                                                            <li class="list-inline-item">
+                                                                <i class="ti ti-archive ti-sm"></i>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="email-list-item email-marked-read" data-bs-toggle="sidebar" data-target="#app-email-view" data-trash="true">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="form-check mb-0">
+                                                        <input class="email-list-item-input form-check-input" id="email-10" type="checkbox">
+                                                        <label class="form-check-label" for="email-10"></label>
+                                                    </div>
+                                                    <i class="email-list-item-bookmark ti ti-star ti-sm d-sm-inline-block d-none cursor-pointer ms-2 me-3"></i>
+                                                    <img alt="کاربر-آواتار" class="d-block flex-shrink-0 rounded-circle me-sm-3 me-2" height="32" src="../assets/admin/img/avatars/9.png" width="32">
+                                                    <div class="email-list-item-content ms-2 ms-sm-0 me-2">
+                                                        <span class="h6 email-list-item-username me-2">حسین محمدی</span>
+                                                        <span class="email-list-item-subject d-xl-inline-block d-block"> توسعهٔ محیط&zwnj;های اجرای متن&zwnj;باز با استفاده از Docker.
+                                                        </span>
+                                                    </div>
+                                                    <div class="email-list-item-meta ms-auto d-flex align-items-center">
+                                                        <span class="email-list-item-label badge badge-dot bg-primary d-none d-md-inline-block me-2" data-label="company"></span>
+                                                        <small class="email-list-item-time text-muted">25 اردیبهشت</small>
+                                                        <ul class="list-inline email-list-item-actions text-nowrap">
+                                                            <li class="list-inline-item email-unread">
+                                                                <i class="ti ti-mail ti-sm"></i>
+                                                            </li>
+                                                            <li class="list-inline-item email-delete">
+                                                                <i class="ti ti-trash ti-sm"></i>
+                                                            </li>
+                                                            <li class="list-inline-item">
+                                                                <i class="ti ti-archive ti-sm"></i>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <ul class="list-unstyled m-0">
+                                            <li class="email-list-empty text-center d-none">موردی یافت نشد.</li>
+                                        </ul>
+                                    <div class="ps__rail-x" style="left: 0px; bottom: 0px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__rail-y" style="top: 0px; height: 281px; right: 699px;"><div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 115px;"></div></div><div class="ps__rail-x" style="left: 0px; bottom: 0px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__rail-y" style="top: 0px; height: 281px; right: -9px;"><div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 115px;"></div></div></div>
+                                </div>
+                                <div class="app-overlay"></div>
+                            </div>
+                            <!-- /Emails List -->
+                            <!-- Email View -->
+                            <div class="col app-email-view flex-grow-0 bg-body" id="app-email-view">
+                                <div class="card shadow-none border-0 rounded-0 app-email-view-header p-3 py-md-3 py-2">
+                                    <!-- Email View : Title  bar-->
+                                    <div class="d-flex justify-content-between align-items-center py-2">
+                                        <div class="d-flex align-items-center overflow-hidden">
+                                            <i class="ti ti-chevron-left ti-sm cursor-pointer me-2" data-bs-toggle="sidebar" data-target="#app-email-view"></i>
+                                            <h6 class="text-truncate mb-0 me-2">این موضوع ایمیل می باشد</h6>
+                                            <span class="badge bg-label-danger rounded-pill">خصوصی</span>
+                                        </div>
+                                        <!-- Email View : Action  bar-->
+                                        <div class="d-flex align-items-center">
+                                            <i class="ti ti-printer ti-sm mt-1 cursor-pointer d-sm-block d-none"></i>
+                                            <div class="dropdown ms-3">
+                                                <button aria-expanded="false" aria-haspopup="true" class="btn p-0" data-bs-toggle="dropdown" id="dropdownMoreOptions" type="button">
+                                                    <i class="ti ti-dots-vertical ti-sm"></i>
+                                                </button>
+                                                <div aria-labelledby="dropdownMoreOptions" class="dropdown-menu dropdown-menu-end">
+                                                    <a class="dropdown-item" href="javascript:void(0)">
+                                                        <i class="ti ti-mail ti-xs me-1"></i>
+                                                        <span class="align-middle">خوانده شده</span>
+                                                    </a>
+                                                    <a class="dropdown-item" href="javascript:void(0)">
+                                                        <i class="ti ti-mail-opened ti-xs me-1"></i>
+                                                        <span class="align-middle">خوانده نشده</span>
+                                                    </a>
+                                                    <a class="dropdown-item" href="javascript:void(0)">
+                                                        <i class="ti ti-star ti-sm me-1"></i>
+                                                        <span class="align-middle">ستاره دار</span>
+                                                    </a>
+                                                    <a class="dropdown-item" href="javascript:void(0)">
+                                                        <i class="ti ti-calendar ti-xs me-1"></i>
+                                                        <span class="align-middle">ایجاد رویداد</span>
+                                                    </a>
+                                                    <a class="dropdown-item" href="javascript:void(0)">
+                                                        <i class="ti ti-volume-off ti-xs me-1"></i>
+                                                        <span class="align-middle">بی صدا</span>
+                                                    </a>
+                                                    <a class="dropdown-item d-sm-none d-block" href="javascript:void(0)">
+                                                        <i class="ti ti-printer ti-xs me-1"></i>
+                                                        <span class="align-middle">چاپ</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr class="app-email-view-hr mx-n3 mb-2">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="d-flex align-items-center">
+                                            <i class="ti ti-trash ti-sm cursor-pointer me-3" data-bs-toggle="sidebar" data-target="#app-email-view"></i>
+                                            <i class="ti ti-mail-opened ti-sm cursor-pointer me-3"></i>
+                                            <div class="dropdown me-3">
+                                                <button aria-expanded="false" aria-haspopup="true" class="btn p-0" data-bs-toggle="dropdown" id="dropdownMenuFolderTwo" type="button">
+                                                    <i class="ti ti-folder ti-sm"></i>
+                                                </button>
+                                                <div aria-labelledby="dropdownMenuFolderTwo" class="dropdown-menu dropdown-menu-end">
+                                                    <a class="dropdown-item" href="javascript:void(0)">
+                                                        <i class="ti ti-info-circle ti-xs me-1"></i>
+                                                        <span class="align-middle">هرزنامه ها</span>
+                                                    </a>
+                                                    <a class="dropdown-item" href="javascript:void(0)">
+                                                        <i class="ti ti-pencil ti-xs me-1"></i>
+                                                        <span class="align-middle">پیش نویس</span>
+                                                    </a>
+                                                    <a class="dropdown-item" href="javascript:void(0)">
+                                                        <i class="ti ti-trash ti-xs me-1"></i>
+                                                        <span class="align-middle">حذف شده&zwnj;ها</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="dropdown me-3">
+                                                <button aria-expanded="false" aria-haspopup="true" class="btn p-0" data-bs-toggle="dropdown" id="dropdownLabelTwo" type="button">
+                                                    <i class="ti ti-tag ti-sm"></i>
+                                                </button>
+                                                <div aria-labelledby="dropdownLabelTwo" class="dropdown-menu dropdown-menu-end">
+                                                    <a class="dropdown-item" href="javascript:void(0)">
+                                                        <i class="badge badge-dot bg-success me-1"></i>
+                                                        <span class="align-middle">کارگاه</span>
+                                                    </a>
+                                                    <a class="dropdown-item" href="javascript:void(0)">
+                                                        <i class="badge badge-dot bg-primary me-1"></i>
+                                                        <span class="align-middle">شرکت</span>
+                                                    </a>
+                                                    <a class="dropdown-item" href="javascript:void(0)">
+                                                        <i class="badge badge-dot bg-info me-1"></i>
+                                                        <span class="align-middle">مهم</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center flex-wrap justify-content-end">
+                                            <span class="d-sm-block d-none mx-3 text-muted">
+                                                <bdi>1-10</bdi>
+                                                از 653
+                                            </span>
+                                            <i class="ti ti-chevron-left ti-sm scaleX-n1-rtl cursor-pointer text-muted me-2"></i>
+                                            <i class="ti ti-chevron-right ti-sm scaleX-n1-rtl cursor-pointer"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="m-0">
+                                <!-- Email View : Content-->
+                                <div class="app-email-view-content py-4 ps ps__rtl ps--active-y">
+                                    <p class="email-earlier-msgs text-center text-muted cursor-pointer mb-5">1 پیام قبلی</p>
+                                    <!-- Email View : Previous mails-->
+                                    <div class="card email-card-prev mx-sm-4 mx-3">
+                                        <div class="card-header d-flex justify-content-between align-items-center flex-wrap">
+                                            <div class="d-flex align-items-center mb-sm-0 mb-3">
+                                                <img alt="کاربر-آواتار" class="flex-shrink-0 rounded-circle me-3" height="40" src="../assets/admin/img/avatars/2.png" width="40">
+                                                <div class="flex-grow-1 ms-1">
+                                                    <h6 class="m-0">نازنین کریمی</h6>
+                                                    <small class="text-muted">rossGeller@email.com</small>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex align-items-center">
+                                                <p class="mb-0 me-3 text-muted">20 آبان 1399، 08:30 صبح</p>
+                                                <i class="ti ti-paperclip cursor-pointer me-2"></i>
+                                                <i class="email-list-item-bookmark ti ti-star ti-sm cursor-pointer me-2"></i>
+                                                <div class="dropdown me-3 d-flex align-self-center">
+                                                    <button aria-expanded="false" aria-haspopup="true" class="btn p-0" data-bs-toggle="dropdown" id="dropdownEmailOne" type="button">
+                                                        <i class="ti ti-dots-vertical"></i>
+                                                    </button>
+                                                    <div aria-labelledby="dropdownEmailOne" class="dropdown-menu dropdown-menu-end">
+                                                        <a class="dropdown-item scroll-to-reply" href="javascript:void(0)">
+                                                            <i class="ti ti-corner-up-left me-1"></i>
+                                                            <span class="align-middle">پاسخ</span>
+                                                        </a>
+                                                        <a class="dropdown-item" href="javascript:void(0)">
+                                                            <i class="ti ti-corner-up-right me-1"></i>
+                                                            <span class="align-middle">فـوروارد</span>
+                                                        </a>
+                                                        <a class="dropdown-item" href="javascript:void(0)">
+                                                            <i class="ti ti-alert-octagon me-1"></i>
+                                                            <span class="align-middle">گزارش</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <p class="fw-medium">با درود!</p>
+                                            <p> ایران، کشوری با تاریخ چند هزار ساله و فرهنگ غنی، در قلب خاورمیانه واقع شده است. این سرزمین با جغرافیای متنوع، از دشتها و کوهستان&zwnj;های زیبا تا سواحل دریای خزر و خلیج فارس، همواره به عنوان یکی از نقاط تاریخی و طبیعی مهم جهان شناخته می&zwnj;شود. فرهنگ ایران، با پیشینه&zwnj;های هنری، ادبی، و معماری غنی، اساس ارزش&zwnj;ها و هویت این ملت را شکل داده است
+                                            </p>
+                                            <p> اقتصاد ایران نیز به عنوان یکی از کشورهای مهم تولیدکننده نفت و گاز در جهان شناخته می&zwnj;شود، اما همچنان با چالش&zwnj;ها و فرصت&zwnj;هایی در جهت توسعه صنعت، فناوری، و کارآفرینی روبه&zwnj;رو است. ایران با تاریخ تاریخی پرتنوع و مردمانی دلسوز، به عنوان یکی از کشورهای جذاب و پرمعنا در منطقه، همچنان در مسیر توسعه و پیشرفت خود قدم برمی&zwnj;دارد</p>
+                                            <p class="mb-0">ارادتمند شما،</p>
+                                            <p class="fw-medium mb-0">تیم طراحی بایت مستر</p>
+                                            <hr>
+                                            <p class="email-attachment-title mb-2">پیوست ها</p>
+                                            <div class="cursor-pointer">
+                                                <i class="ti ti-file"></i>
+                                                <span class="align-middle ms-1">report.xlsx</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Email View : Last mail-->
+                                    <div class="card email-card-last mx-sm-4 mx-3 mt-4">
+                                        <div class="card-header d-flex justify-content-between align-items-center flex-wrap">
+                                            <div class="d-flex align-items-center mb-sm-0 mb-3">
+                                                <img alt="کاربر-آواتار" class="flex-shrink-0 rounded-circle me-3" height="40" src="../assets/admin/img/avatars/1.png" width="40">
+                                                <div class="flex-grow-1 ms-1">
+                                                    <h6 class="m-0">محمد حسینی</h6>
+                                                    <small class="text-muted">iAmAhoot@email.com</small>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex align-items-center">
+                                                <p class="mb-0 me-3 text-muted">20 آبان 1399، 08:10 صبح</p>
+                                                <i class="ti ti-paperclip cursor-pointer me-2"></i>
+                                                <i class="email-list-item-bookmark ti ti-star ti-sm cursor-pointer me-2"></i>
+                                                <div class="dropdown me-3 d-flex align-self-center">
+                                                    <button aria-expanded="false" aria-haspopup="true" class="btn p-0" data-bs-toggle="dropdown" id="dropdownEmailTwo" type="button">
+                                                        <i class="ti ti-dots-vertical"></i>
+                                                    </button>
+                                                    <div aria-labelledby="dropdownEmailTwo" class="dropdown-menu dropdown-menu-end">
+                                                        <a class="dropdown-item scroll-to-reply" href="javascript:void(0)">
+                                                            <i class="ti ti-corner-up-left me-1"></i>
+                                                            <span class="align-middle">پاسخ</span>
+                                                        </a>
+                                                        <a class="dropdown-item" href="javascript:void(0)">
+                                                            <i class="ti ti-corner-up-right me-1"></i>
+                                                            <span class="align-middle">فـوروارد</span>
+                                                        </a>
+                                                        <a class="dropdown-item" href="javascript:void(0)">
+                                                            <i class="ti ti-alert-octagon me-1"></i>
+                                                            <span class="align-middle">گزارش</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <p class="fw-medium">با درود!</p>
+                                            <p> ایران، کشوری با تاریخ چند هزار ساله و فرهنگ غنی، در قلب خاورمیانه واقع شده است. این سرزمین با جغرافیای متنوع، از دشتها و کوهستان&zwnj;های زیبا تا سواحل دریای خزر و خلیج فارس، همواره به عنوان یکی از نقاط تاریخی و طبیعی مهم جهان شناخته می&zwnj;شود. فرهنگ ایران، با پیشینه&zwnj;های هنری، ادبی، و معماری غنی، اساس ارزش&zwnj;ها و هویت این ملت را شکل داده است
+                                            </p>
+                                            <p> اقتصاد ایران نیز به عنوان یکی از کشورهای مهم تولیدکننده نفت و گاز در جهان شناخته می&zwnj;شود، اما همچنان با چالش&zwnj;ها و فرصت&zwnj;هایی در جهت توسعه صنعت، فناوری، و کارآفرینی روبه&zwnj;رو است. ایران با تاریخ تاریخی پرتنوع و مردمانی دلسوز، به عنوان یکی از کشورهای جذاب و پرمعنا در منطقه، همچنان در مسیر توسعه و پیشرفت خود قدم برمی&zwnj;دارد</p>
+                                            <p class="mb-0">ارادتمند شما،</p>
+                                            <p class="fw-medium mb-0">تیم طراحی بایت مستر</p>
+                                            <hr>
+                                            <p class="email-attachment-title mb-2">پیوست ها</p>
+                                            <div class="cursor-pointer">
+                                                <i class="ti ti-file"></i>
+                                                <span class="align-middle ms-1">report.xlsx</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Email View : Reply mail-->
+                                    <div class="email-reply card mt-4 mx-sm-4 mx-3">
+                                        <h6 class="card-header border-0">پاسخ به نازنین کریمی</h6>
+                                        <div class="card-body pt-0 px-3">
+                                            <div class="d-flex justify-content-start">
+                                                <div class="email-reply-toolbar border-0 w-100 ps-0 ql-toolbar ql-snow">
+                                                    <span class="ql-formats me-0">
+                                                        <button class="ql-bold" type="button"><svg viewBox="0 0 18 18"> <path class="ql-stroke" d="M5,4H9.5A2.5,2.5,0,0,1,12,6.5v0A2.5,2.5,0,0,1,9.5,9H5A0,0,0,0,1,5,9V4A0,0,0,0,1,5,4Z"></path> <path class="ql-stroke" d="M5,9h5.5A2.5,2.5,0,0,1,13,11.5v0A2.5,2.5,0,0,1,10.5,14H5a0,0,0,0,1,0,0V9A0,0,0,0,1,5,9Z"></path> </svg></button>
+                                                        <button class="ql-italic" type="button"><svg viewBox="0 0 18 18"> <line class="ql-stroke" x1="7" x2="13" y1="4" y2="4"></line> <line class="ql-stroke" x1="5" x2="11" y1="14" y2="14"></line> <line class="ql-stroke" x1="8" x2="10" y1="14" y2="4"></line> </svg></button>
+                                                        <button class="ql-underline" type="button"><svg viewBox="0 0 18 18"> <path class="ql-stroke" d="M5,3V9a4.012,4.012,0,0,0,4,4H9a4.012,4.012,0,0,0,4-4V3"></path> <rect class="ql-fill" height="1" rx="0.5" ry="0.5" width="12" x="3" y="15"></rect> </svg></button>
+                                                        <button class="ql-list" value="ordered" type="button"><svg viewBox="0 0 18 18"> <line class="ql-stroke" x1="7" x2="15" y1="4" y2="4"></line> <line class="ql-stroke" x1="7" x2="15" y1="9" y2="9"></line> <line class="ql-stroke" x1="7" x2="15" y1="14" y2="14"></line> <line class="ql-stroke ql-thin" x1="2.5" x2="4.5" y1="5.5" y2="5.5"></line> <path class="ql-fill" d="M3.5,6A0.5,0.5,0,0,1,3,5.5V3.085l-0.276.138A0.5,0.5,0,0,1,2.053,3c-0.124-.247-0.023-0.324.224-0.447l1-.5A0.5,0.5,0,0,1,4,2.5v3A0.5,0.5,0,0,1,3.5,6Z"></path> <path class="ql-stroke ql-thin" d="M4.5,10.5h-2c0-.234,1.85-1.076,1.85-2.234A0.959,0.959,0,0,0,2.5,8.156"></path> <path class="ql-stroke ql-thin" d="M2.5,14.846a0.959,0.959,0,0,0,1.85-.109A0.7,0.7,0,0,0,3.75,14a0.688,0.688,0,0,0,.6-0.736,0.959,0.959,0,0,0-1.85-.109"></path> </svg></button>
+                                                        <button class="ql-list" value="bullet" type="button"><svg viewBox="0 0 18 18"> <line class="ql-stroke" x1="6" x2="15" y1="4" y2="4"></line> <line class="ql-stroke" x1="6" x2="15" y1="9" y2="9"></line> <line class="ql-stroke" x1="6" x2="15" y1="14" y2="14"></line> <line class="ql-stroke" x1="3" x2="3" y1="4" y2="4"></line> <line class="ql-stroke" x1="3" x2="3" y1="9" y2="9"></line> <line class="ql-stroke" x1="3" x2="3" y1="14" y2="14"></line> </svg></button>
+                                                        <button class="ql-link" type="button"><svg viewBox="0 0 18 18"> <line class="ql-stroke" x1="7" x2="11" y1="7" y2="11"></line> <path class="ql-even ql-stroke" d="M8.9,4.577a3.476,3.476,0,0,1,.36,4.679A3.476,3.476,0,0,1,4.577,8.9C3.185,7.5,2.035,6.4,4.217,4.217S7.5,3.185,8.9,4.577Z"></path> <path class="ql-even ql-stroke" d="M13.423,9.1a3.476,3.476,0,0,0-4.679-.36,3.476,3.476,0,0,0,.36,4.679c1.392,1.392,2.5,2.542,4.679.36S14.815,10.5,13.423,9.1Z"></path> </svg></button>
+                                                        <button class="ql-image" type="button"><svg viewBox="0 0 18 18"> <rect class="ql-stroke" height="10" width="12" x="3" y="4"></rect> <circle class="ql-fill" cx="6" cy="7" r="1"></circle> <polyline class="ql-even ql-fill" points="5 12 5 11 7 9 8 10 11 7 13 9 13 12 5 12"></polyline> </svg></button>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="email-reply-editor ql-container ql-snow"><div class="ql-editor ql-blank" data-gramm="false" contenteditable="true" data-placeholder="پیام خود را بنویسید... "><p><br></p></div><div class="ql-clipboard" contenteditable="true" tabindex="-1"></div><div class="ql-tooltip ql-hidden"><a class="ql-preview" rel="noopener noreferrer" target="_blank" href="about:blank"></a><input type="text" data-formula="e=mc^2" data-link="https://quilljs.com" data-video="Embed URL"><a class="ql-action"></a><a class="ql-remove"></a></div></div>
+                                            <div class="d-flex justify-content-end align-items-center">
+                                                <div class="me-3">
+                                                    <label class="cursor-pointer" for="attach-file-1">
+                                                        <i class="ti ti-paperclip me-2"></i>
+                                                        <span class="align-middle">پیوست ها</span>
+                                                    </label>
+                                                    <input class="d-none" id="attach-file-1" name="file-input" type="file">
+                                                </div>
+                                                <button class="btn btn-primary waves-effect waves-light">
+                                                    <i class="ti ti-send ti-xs me-1"></i>
+                                                    <span class="align-middle">ارسال</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                <div class="ps__rail-x" style="left: 0px; bottom: 0px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__rail-y" style="top: 0px; height: 280px; right: 700px;"><div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 87px;"></div></div></div>
+                            </div>
+                            <!-- Email View -->
+                        </div>
+                        <!-- Compose Email -->
+                        <div aria-labelledby="emailComposeSidebarLabel" class="app-email-compose modal" id="emailComposeSidebar" tabindex="-1" aria-hidden="true" style="display: none;">
+                            <div class="modal-dialog m-0 me-md-4 mb-4 modal-lg">
+                                <div class="modal-content p-0">
+                                    <div class="modal-header py-3 bg-body">
+                                        <h5 class="modal-title fs-5">نوشتن نامه</h5>
+                                        <button aria-label="بستن" class="btn-close" data-bs-dismiss="modal" type="button"></button>
+                                    </div>
+                                    <div class="modal-body flex-grow-1 pb-sm-0 p-4 py-2">
+                                        <form class="email-compose-form">
+                                            <div class="email-compose-to d-flex justify-content-between align-items-center">
+                                                <label class="form-label mb-0" for="emailContacts">به:</label>
+                                                <div class="select2-primary border-0 shadow-none flex-grow-1 mx-2">
+                                                    <div class="position-relative"><div class="position-relative"><select class="select2 select-email-contacts form-select select2-hidden-accessible" id="emailContacts" multiple="" name="emailContacts" tabindex="-1" aria-hidden="true" data-select2-id="emailContacts">
+                                                        <option data-avatar="1.png" value="Jane Foster">شهاب حسینی</option>
+                                                        <option data-avatar="3.png" value="Donna Frank">پوریا پورسرخ</option>
+                                                        <option data-avatar="5.png" value="Gabrielle Robertson">علی مصفان</option>
+                                                        <option data-avatar="7.png" value="Lori Spears">حامد بهداد</option>
+                                                        <option data-avatar="9.png" value="Sandy Vega">شهرام قائدی</option>
+                                                        <option data-avatar="11.png" value="Cheryl May">پیمان معادی</option>
+                                                    </select><span class="select2 select2-container select2-container--default" dir="rtl" data-select2-id="8" style="width: auto;"><span class="selection"><span class="select2-selection select2-selection--multiple" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="-1" aria-disabled="false"><ul class="select2-selection__rendered"><li class="select2-search select2-search--inline"><input class="select2-search__field" type="search" tabindex="0" autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false" role="searchbox" aria-autocomplete="list" placeholder="انتخاب کنید" style="width: 0px;"></li></ul></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span></div></div>
+                                                </div>
+                                                <div class="email-compose-toggle-wrapper">
+                                                    <a class="email-compose-toggle-cc" href="javascript:void(0);">Cc |</a>
+                                                    <a class="email-compose-toggle-bcc" href="javascript:void(0);">Bcc</a>
+                                                </div>
+                                            </div>
+                                            <div class="email-compose-cc d-none">
+                                                <hr class="container-m-nx my-2">
+                                                <div class="d-flex align-items-center">
+                                                    <label class="form-label mb-0" for="email-cc">رونوشت:</label>
+                                                    <input class="form-control border-0 shadow-none flex-grow-1 mx-2" id="email-cc" placeholder="someone@email.com" type="text">
+                                                </div>
+                                            </div>
+                                            <div class="email-compose-bcc d-none">
+                                                <hr class="container-m-nx my-2">
+                                                <div class="d-flex align-items-center">
+                                                    <label class="form-label mb-0" for="email-bcc">رونوشت مخفی:</label>
+                                                    <input class="form-control border-0 shadow-none flex-grow-1 mx-2" id="email-bcc" placeholder="someone@email.com" type="text">
+                                                </div>
+                                            </div>
+                                            <hr class="container-m-nx my-2">
+                                            <div class="email-compose-subject d-flex align-items-center mb-2">
+                                                <label class="form-label mb-0" for="email-subject">موضوع:</label>
+                                                <input class="form-control border-0 shadow-none flex-grow-1 mx-2" id="email-subject" placeholder="جزئیات پروژه" type="text">
+                                            </div>
+                                            <div class="email-compose-message container-m-nx">
+                                                <div class="d-flex justify-content-end">
+                                                    <div class="email-editor-toolbar border-0 w-100 border-top ql-toolbar ql-snow">
+                                                        <span class="ql-formats me-0">
+                                                            <button class="ql-bold" type="button"><svg viewBox="0 0 18 18"> <path class="ql-stroke" d="M5,4H9.5A2.5,2.5,0,0,1,12,6.5v0A2.5,2.5,0,0,1,9.5,9H5A0,0,0,0,1,5,9V4A0,0,0,0,1,5,4Z"></path> <path class="ql-stroke" d="M5,9h5.5A2.5,2.5,0,0,1,13,11.5v0A2.5,2.5,0,0,1,10.5,14H5a0,0,0,0,1,0,0V9A0,0,0,0,1,5,9Z"></path> </svg></button>
+                                                            <button class="ql-italic" type="button"><svg viewBox="0 0 18 18"> <line class="ql-stroke" x1="7" x2="13" y1="4" y2="4"></line> <line class="ql-stroke" x1="5" x2="11" y1="14" y2="14"></line> <line class="ql-stroke" x1="8" x2="10" y1="14" y2="4"></line> </svg></button>
+                                                            <button class="ql-underline" type="button"><svg viewBox="0 0 18 18"> <path class="ql-stroke" d="M5,3V9a4.012,4.012,0,0,0,4,4H9a4.012,4.012,0,0,0,4-4V3"></path> <rect class="ql-fill" height="1" rx="0.5" ry="0.5" width="12" x="3" y="15"></rect> </svg></button>
+                                                            <button class="ql-list" value="ordered" type="button"><svg viewBox="0 0 18 18"> <line class="ql-stroke" x1="7" x2="15" y1="4" y2="4"></line> <line class="ql-stroke" x1="7" x2="15" y1="9" y2="9"></line> <line class="ql-stroke" x1="7" x2="15" y1="14" y2="14"></line> <line class="ql-stroke ql-thin" x1="2.5" x2="4.5" y1="5.5" y2="5.5"></line> <path class="ql-fill" d="M3.5,6A0.5,0.5,0,0,1,3,5.5V3.085l-0.276.138A0.5,0.5,0,0,1,2.053,3c-0.124-.247-0.023-0.324.224-0.447l1-.5A0.5,0.5,0,0,1,4,2.5v3A0.5,0.5,0,0,1,3.5,6Z"></path> <path class="ql-stroke ql-thin" d="M4.5,10.5h-2c0-.234,1.85-1.076,1.85-2.234A0.959,0.959,0,0,0,2.5,8.156"></path> <path class="ql-stroke ql-thin" d="M2.5,14.846a0.959,0.959,0,0,0,1.85-.109A0.7,0.7,0,0,0,3.75,14a0.688,0.688,0,0,0,.6-0.736,0.959,0.959,0,0,0-1.85-.109"></path> </svg></button>
+                                                            <button class="ql-list" value="bullet" type="button"><svg viewBox="0 0 18 18"> <line class="ql-stroke" x1="6" x2="15" y1="4" y2="4"></line> <line class="ql-stroke" x1="6" x2="15" y1="9" y2="9"></line> <line class="ql-stroke" x1="6" x2="15" y1="14" y2="14"></line> <line class="ql-stroke" x1="3" x2="3" y1="4" y2="4"></line> <line class="ql-stroke" x1="3" x2="3" y1="9" y2="9"></line> <line class="ql-stroke" x1="3" x2="3" y1="14" y2="14"></line> </svg></button>
+                                                            <button class="ql-link" type="button"><svg viewBox="0 0 18 18"> <line class="ql-stroke" x1="7" x2="11" y1="7" y2="11"></line> <path class="ql-even ql-stroke" d="M8.9,4.577a3.476,3.476,0,0,1,.36,4.679A3.476,3.476,0,0,1,4.577,8.9C3.185,7.5,2.035,6.4,4.217,4.217S7.5,3.185,8.9,4.577Z"></path> <path class="ql-even ql-stroke" d="M13.423,9.1a3.476,3.476,0,0,0-4.679-.36,3.476,3.476,0,0,0,.36,4.679c1.392,1.392,2.5,2.542,4.679.36S14.815,10.5,13.423,9.1Z"></path> </svg></button>
+                                                            <button class="ql-image" type="button"><svg viewBox="0 0 18 18"> <rect class="ql-stroke" height="10" width="12" x="3" y="4"></rect> <circle class="ql-fill" cx="6" cy="7" r="1"></circle> <polyline class="ql-even ql-fill" points="5 12 5 11 7 9 8 10 11 7 13 9 13 12 5 12"></polyline> </svg></button>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="email-editor border-0 border-top ql-container ql-snow"><div class="ql-editor ql-blank" data-gramm="false" contenteditable="true" data-placeholder="پیام خود را بنویسید... "><p><br></p></div><div class="ql-clipboard" contenteditable="true" tabindex="-1"></div><div class="ql-tooltip ql-hidden"><a class="ql-preview" rel="noopener noreferrer" target="_blank" href="about:blank"></a><input type="text" data-formula="e=mc^2" data-link="https://quilljs.com" data-video="Embed URL"><a class="ql-action"></a><a class="ql-remove"></a></div></div>
+                                            </div>
+                                            <hr class="container-m-nx mt-0 mb-2">
+                                            <div class="email-compose-actions d-flex justify-content-between align-items-center mt-3 mb-3">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="btn-group">
+                                                        <button aria-label="بستن" class="btn btn-primary waves-effect waves-light" data-bs-dismiss="modal" type="reset">
+                                                            <i class="ti ti-send ti-xs me-1"></i>
+                                                            ارسال
+                                                        </button>
+                                                        <button aria-expanded="false" aria-haspopup="true" class="btn btn-primary dropdown-toggle dropdown-toggle-split waves-effect waves-light" data-bs-toggle="dropdown" type="button">
+                                                            <span class="visually-hidden">گزینه های ارسال</span>
+                                                        </button>
+                                                        <ul class="dropdown-menu">
+                                                            <li>
+                                                                <a class="dropdown-item" href="javascript:void(0);">ارسال در زمان مشخص</a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="dropdown-item" href="javascript:void(0);">ذخیره پیش نویس</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <label for="attach-file">
+                                                        <i class="ti ti-paperclip cursor-pointer ms-2"></i>
+                                                    </label>
+                                                    <input class="d-none" id="attach-file" name="file-input" type="file">
+                                                </div>
+                                                <div class="d-flex align-items-center">
+                                                    <div class="dropdown">
+                                                        <button aria-expanded="false" aria-haspopup="true" class="btn p-0" data-bs-toggle="dropdown" id="dropdownMoreActions" type="button">
+                                                            <i class="ti ti-dots-vertical"></i>
+                                                        </button>
+                                                        <ul aria-labelledby="dropdownMoreActions" class="dropdown-menu">
+                                                            <li>
+                                                                <button class="dropdown-item" type="button">افزودن برچسب</button>
+                                                            </li>
+                                                            <li>
+                                                                <button class="dropdown-item" type="button">حالت متن ساده</button>
+                                                            </li>
+                                                            <li>
+                                                                <hr class="dropdown-divider">
+                                                            </li>
+                                                            <li>
+                                                                <button class="dropdown-item" type="button">چاپ</button>
+                                                            </li>
+                                                            <li>
+                                                                <button class="dropdown-item" type="button">بررسی درستی نوشتار</button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <button aria-label="بستن" class="btn" data-bs-dismiss="modal" type="reset">
+                                                        <i class="ti ti-trash"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /Compose Email -->
+                    </div>
+                </div>
+                <!-- / Content -->
+                <!-- Footer -->
+                <footer class="content-footer footer bg-footer-theme">
+                    <div class="container-xxl">
+                        <div class="footer-container d-flex align-items-center justify-content-center py-2 flex-md-row flex-column">
+                            <div> ©
+                                <script>
+                                    document.write(new Date().getFullYear());
+
+                                </script>
+                                , ارائه شده توسط
+                                <span class="text-muted">زرین کد</span>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+                <!-- / Footer -->
+                <div class="content-backdrop fade"></div>
+            </div>
+            <!-- Content wrapper -->
+        </div>
+        <!-- / Layout page -->
+    </div>
+    <!-- Overlay -->
+    <div class="layout-overlay layout-menu-toggle"></div>
+    <!-- Drag Target Area To SlideIn Menu On Small Screens -->
+    <div class="drag-target"></div>
+</div>
+<!-- / Layout wrapper -->
+<!-- Core JS -->
+<!-- build:js assets/vendor/js/core.js -->
+<script src="../assets/admin/vendor/libs/jquery/jquery.js"></script>
+<script src="../assets/admin/vendor/libs/popper/popper.js"></script>
+<script src="../assets/admin/vendor/js/bootstrap.js"></script>
+<script src="../assets/admin/vendor/libs/node-waves/node-waves.js"></script>
+<script src="../assets/admin/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+<script src="../assets/admin/vendor/libs/hammer/hammer.js"></script>
+<script src="../assets/admin/vendor/libs/i18n/i18n.js"></script>
+<script src="../assets/admin/vendor/libs/typeahead-js/typeahead.js"></script>
+<script src="../assets/admin/vendor/js/menu.js"></script>
+<!-- endbuild -->
+<!-- Vendors JS -->
+<script src="../assets/admin/vendor/libs/apex-charts/apexcharts.js"></script>
+<script src="../assets/admin/vendor/libs/swiper/swiper.js"></script>
+<script src="../assets/admin/vendor/libs/datatables-bs5/datatables-bootstrap5.js"></script>
+<!-- Main JS -->
+<script src="../assets/admin/js/main.js"></script>
+<!-- Page JS -->
+<script src="../assets/admin/js/dashboards-analytics.js"></script>
+</body>
+
+
+<!-- Mirrored from bytemaster.ir/demo/vuexy/landing/template/rtl/html/vertical-menu-template/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 01 May 2024 15:51:36 GMT -->
+</html>
