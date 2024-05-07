@@ -1,7 +1,8 @@
 function fade_preloader() {
-    $("#preloader").animate({
-        left: '2000px'
-    }, 3000, 'linear');
+    // $("#preloader").animate({
+    //     left: '2000px'
+    // }, 3000, 'linear');
+    $("#preloader").fadeOut();
 }
 
 setTimeout(() => fade_preloader(), 5000);

@@ -6,10 +6,10 @@
 <head>
     <meta charset="UTF-8"/>
     <meta content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" name="viewport"/>
-    <title>داشبورد - تجزیه و تحلیل | Vuexy - قالب مدیریت بوت استرپ</title>
+    <title>زرین کد - داشبورد</title>
     <meta content="" name="description"/>
     <!-- Favicon -->
-    <link href="https://bytemaster.ir/demo/vuexy/landing/template/rtl/assets/img/favicon/favicon.ico" rel="icon" type="image/x-icon"/>
+    <link href="../assets/admin/img/logo/logo-mini.png" rel="icon" type="image/x-icon"/>
 
     <!-- Icons -->
     <link href="../assets/admin/vendor/fonts/fontawesome.css" rel="stylesheet"/>
@@ -63,16 +63,16 @@
             <ul class="menu-inner py-1">
                 <!-- Dashboards -->
                 <li class="menu-item">
-                    <a class="menu-link menu-toggle" href="index.html">
+                    <a class="menu-link" href="index.html">
                         <i class="menu-icon tf-icons fa fa-dashboard"></i>
                         <div>داشبورد‌</div>
                     </a>
                 </li>
                 <!-- Layouts -->
                 <li class="menu-item">
-                    <a class="menu-link menu-toggle" href="buy-template.html">
+                    <a class="menu-link" href="template.html">
                         <i class="menu-icon tf-icons fa fa-layer-group"></i>
-                        <div>خرید قالب</div>
+                        <div>قالب</div>
                     </a>
                     <!-- <ul class="menu-sub">
                         <li class="menu-item">
@@ -124,15 +124,15 @@
                 </li>
                 <!-- Front Pages -->
                 <li class="menu-item">
-                    <a class="menu-link menu-toggle" href="purchase-web.html">
+                    <a class="menu-link" href="add-project.html">
                         <i class="menu-icon tf-icons fa fa-archive"></i>
-                        <div>ثبت سایت</div>
+                        <div>ثبت پروژه</div>
                     </a>
                 </li>
                 <li class="menu-item">
-                    <a class="menu-link" href="purchased-web.html">
+                    <a class="menu-link" href="projects.html">
                         <i class="menu-icon tf-icons fa fa-archive"></i>
-                        <div>سایت های ثبت شده</div>
+                        <div>پروژه ها</div>
                     </a>
                 </li>
                 <li class="menu-item">
@@ -142,13 +142,13 @@
                     </a>
                 </li>
                 <li class="menu-item">
-                    <a class="menu-link menu-toggle" href="financial.html">
+                    <a class="menu-link" href="payment.html">
                         <i class="menu-icon fa fa-bar-chart"></i>
-                        <div>مالی</div>
+                        <div>حسابداری</div>
                     </a>
                 </li>
                 <li class="menu-item">
-                    <a class="menu-link menu-toggle" href="profile.html">
+                    <a class="menu-link" href="profile.html">
                         <i class="menu-icon fa fa-bar-chart"></i>
                         <div>پروفایل</div>
                     </a>
@@ -157,6 +157,18 @@
                     <a class="menu-link" href="support.html">
                         <i class="fa fa-mail-bulk menu-icon tf-icons" aria-hidden="true"></i>
                         <div>پشتیبانی</div>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-link" href="faqs.html">
+                        <i class="fa fa-mail-bulk menu-icon tf-icons" aria-hidden="true"></i>
+                        <div>سوالات متداول</div>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-link" href="terms.html">
+                        <i class="fa fa-mail-bulk menu-icon tf-icons" aria-hidden="true"></i>
+                        <div>مقررات و سیاست ها</div>
                     </a>
                 </li>
             </ul>
@@ -585,264 +597,104 @@
             <div class="content-wrapper">
                 <!-- Content -->
                 <div class="container-xxl flex-grow-1 container-p-y">
-                    <h4 class="py-3 mb-4">
-                        <span class="text-muted fw-light">تجارت الکترونیک /</span>
-                        تنظیمات فروشگاه
-                    </h4>
-                    <div class="row g-4">
-                        <!-- Navigation -->
-                        <div class="col-12 col-lg-4">
-                            <div class="d-flex justify-content-between flex-column mb-3 mb-md-0">
-                                <ul class="nav nav-align-left nav-pills flex-column">
-                                    <li class="nav-item mb-1">
-                                        <a class="nav-link py-2 active" href="javascript:void(0);">
-                                            <i class="ti ti-building-store me-2"></i>
-                                            <span class="align-middle">جزئیات فروشگاه</span>
-                                        </a>
-                                    </li>
-                                    <li class="nav-item mb-1">
-                                        <a class="nav-link py-2" href="app-ecommerce-settings-payments.html">
-                                            <i class="ti ti-credit-card me-2"></i>
-                                            <span class="align-middle">سیستم پرداخت</span>
-                                        </a>
-                                    </li>
-                                    <li class="nav-item mb-1">
-                                        <a class="nav-link py-2" href="app-ecommerce-settings-checkout.html">
-                                            <i class="ti ti-shopping-cart me-2"></i>
-                                            <span class="align-middle">ثبت سفارش</span>
-                                        </a>
-                                    </li>
-                                    <li class="nav-item mb-1">
-                                        <a class="nav-link py-2" href="app-ecommerce-settings-shipping.html">
-                                            <i class="ti ti-discount-2 me-2"></i>
-                                            <span class="align-middle">ارسال و تحویل</span>
-                                        </a>
-                                    </li>
-                                    <li class="nav-item mb-1">
-                                        <a class="nav-link py-2" href="app-ecommerce-settings-locations.html">
-                                            <i class="ti ti-map-pin me-2"></i>
-                                            <span class="align-middle">آدرس فروشگاه</span>
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link py-2" href="app-ecommerce-settings-notifications.html">
-                                            <i class="ti ti-bell-ringing me-2"></i>
-                                            <span class="align-middle">نوتیفیکیشن</span>
-                                        </a>
-                                    </li>
+                    <div class="layout-specing">
+                        <div class="d-md-flex justify-content-between mb-5">
+                            <h5 class="mb-0">شرایط و مقررات</h5>
+    
+                            <nav aria-label="breadcrumb" class="d-inline-block mt-4 mt-sm-0">
+                                <ul class="breadcrumb bg-transparent rounded mb-0 p-0">
+                                    <li class="breadcrumb-item"><a href="index.html">داکتریس</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">مقررات</li>
                                 </ul>
-                            </div>
+                            </nav>
                         </div>
-                        <!-- /Navigation -->
-                        <!-- Options -->
-                        <div class="col-12 col-lg-8 pt-4 pt-lg-0">
-                            <div class="tab-content p-0">
-                                <!-- Store Details Tab -->
-                                <div class="tab-pane fade show active" id="store_details" role="tabpanel">
-                                    <div class="card mb-4">
-                                        <div class="card-header">
-                                            <h5 class="card-title m-0">مشخصات فروشگاه</h5>
-                                        </div>
-                                        <div class="card-body">
-                                            <div class="row mb-3 g-3">
-                                                <div class="col-12 col-md-6">
-                                                    <label class="form-label mb-0" for="ecommerce-settings-details-name">نام فروشگاه</label>
-                                                    <input aria-label="جزئیات تنظیمات" class="form-control" id="ecommerce-settings-details-name" name="settingsDet" placeholder="نوید محمدزاده" type="text">
-                                                </div>
-                                                <div class="col-12 col-md-6">
-                                                    <label class="form-label mb-0" for="ecommerce-settings-details-phone">تلفن</label>
-                                                    <input aria-label="تلفن" class="form-control phone-mask" id="ecommerce-settings-details-phone" name="phone" placeholder="(031) 0000 0000" type="tel">
-                                                </div>
-                                                <div class="col-12 col-md-6">
-                                                    <label class="form-label mb-0" for="ecommerce-settings-details-email">ایمیل فروشگاه</label>
-                                                    <input aria-label="ایمیل" class="form-control" id="ecommerce-settings-details-email" name="email" placeholder="johndoe@gmail.com" type="email">
-                                                </div>
-                                                <div class="col-12 col-md-6">
-                                                    <label class="form-label mb-0" for="ecommerce-settings-sender-email">ایمیل ارتباط با مشتری</label>
-                                                    <input aria-label="ایمیل فرستنده" class="form-control" id="ecommerce-settings-sender-email" name="sender_email" placeholder="johndoe@gmail.com" type="email">
-                                                </div>
-                                            </div>
-                                            <div class="alert d-flex align-items-center bg-label-warning mb-0" role="alert">
-                                                <span class="alert-icon text-warning me-2 bg-label-light px-2 pb-2 rounded-2">
-                                                    <i class="ti ti-bell ti-xs mt-1"></i>
-                                                </span>
-                                                با ارسال کد و تایید به johndoe@gmail.com مطمئن می شویم که به آن دسترسی دارید.
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card mb-4">
-                                        <div class="card-header">
-                                            <h5 class="card-title m-0">اطلاعات صورتحساب</h5>
-                                        </div>
-                                        <div class="card-body">
-                                            <div class="row g-3">
-                                                <div class="col-12 col-md-6">
-                                                    <label class="form-label mb-0" for="business-name">نام شرکت</label>
-                                                    <input class="form-control" id="business-name" placeholder="نام کسب و کار" type="text">
-                                                </div>
-                                                <div class="col-12 col-md-6">
-                                                    <label class="form-label mb-0" for="country_region">کشور</label>
-                                                    <div class="position-relative"><select class="select2 form-select select2-hidden-accessible" data-placeholder="ایران" id="country_region" data-select2-id="country_region" tabindex="-1" aria-hidden="true">
-                                                        <option value="" data-select2-id="2">ایالات متحده</option>
-                                                        <option value="Australia">استرالیا</option>
-                                                        <option value="Bangladesh">بنگلادش</option>
-                                                        <option value="Belarus">بلاروس</option>
-                                                        <option value="Brazil">برزیل</option>
-                                                        <option value="Canada">کانادا</option>
-                                                        <option value="China">چین</option>
-                                                        <option value="France">فرانسه</option>
-                                                        <option value="Germany">آلمان</option>
-                                                        <option value="India">هندوستان</option>
-                                                        <option value="Indonesia">اندونزی</option>
-                                                        <option value="Israel">اسرائيل</option>
-                                                        <option value="Italy">ایتالیا</option>
-                                                        <option value="Japan">ژاپن</option>
-                                                        <option value="Korea">جمهوری کره</option>
-                                                        <option value="Mexico">مکزیک</option>
-                                                        <option value="Philippines">فیلیپین</option>
-                                                        <option value="Russia">فدراسیون روسیه</option>
-                                                        <option value="South Africa">آفریقای جنوبی</option>
-                                                        <option value="Thailand">تایلند</option>
-                                                        <option value="Turkey">ترکیه</option>
-                                                        <option value="Ukraine">اوکراین</option>
-                                                        <option value="United Arab Emirates">امارات متحده عربی</option>
-                                                        <option value="United Kingdom">انگلستان</option>
-                                                        <option value="United States">ایالات متحده</option>
-                                                    </select><span class="select2 select2-container select2-container--default" dir="rtl" data-select2-id="1" style="width: 282.438px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-country_region-container"><span class="select2-selection__rendered" id="select2-country_region-container" role="textbox" aria-readonly="true"><span class="select2-selection__placeholder">ایران</span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span></div>
-                                                </div>
-                                                <div class="col-12 col-md-6">
-                                                    <label class="form-label mb-0" for="bill_address">آدرس</label>
-                                                    <input class="form-control" id="bill_address" placeholder="تهران ، فرشته ...." type="text">
-                                                </div>
-                                                <div class="col-12 col-md-6">
-                                                    <label class="form-label mb-0" for="apa_suite">نوع ساختمان</label>
-                                                    <input class="form-control" id="apa_suite" placeholder="آپارتمان، سوئیت و غیره" type="text">
-                                                </div>
-                                                <div class="col-12 col-md-4">
-                                                    <label class="form-label mb-0" for="bill_city">شهر</label>
-                                                    <input class="form-control" id="bill_city" placeholder="ری ..." type="text">
-                                                </div>
-                                                <div class="col-12 col-md-4">
-                                                    <label class="form-label mb-0" for="bill_state">استان</label>
-                                                    <input class="form-control" id="bill_state" placeholder="تهران ..." type="text">
-                                                </div>
-                                                <div class="col-12 col-md-4">
-                                                    <label class="form-label mb-0" for="bill_pincode">کد پستی</label>
-                                                    <input class="form-control" id="bill_pincode" max="999999" min="0" placeholder="1234" type="number">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card mb-4">
-                                        <div class="card-header">
-                                            <div class="card-title mb-0">
-                                                <h5 class="m-0 mb-1">منطقه زمانی و واحدهای اندازه گیری</h5>
-                                                <p class="text-muted mb-0"> برای محاسبه قیمت محصول، وزن حمل و نقل و زمان سفارش استفاده می شود.</p>
-                                            </div>
-                                        </div>
-                                        <div class="card-body">
-                                            <div class="row g-3">
-                                                <div class="col-12">
-                                                    <label class="form-label mb-0" for="timeZones">منطقه زمانی</label>
-                                                    <div class="position-relative"><select class="select2 form-select select2-hidden-accessible" data-placeholder="(GMT-12:00) International Date Line West" id="timeZones" data-select2-id="timeZones" tabindex="-1" aria-hidden="true">
-                                                        <option value="" data-select2-id="4">(GMT-12:00) خط تاریخ بین المللی غرب</option>
-                                                        <option value="-12">(GMT-12:00) خط تاریخ بین المللی غرب</option>
-                                                        <option value="-11">(GMT-11:00) جزیره میدوی، ساموآ</option>
-                                                        <option value="-10">(GMT-10:00) هاوایی</option>
-                                                        <option value="-9">(GMT-09:00) آلاسکا</option>
-                                                        <option value="-8">(GMT-08:00) به وقت اقیانوس آرام (ایالات متحده و کانادا)</option>
-                                                        <option value="-8">(GMT-08:00) تیجوانا، باخا کالیفرنیا</option>
-                                                        <option value="-7">(GMT-07:00) آریزونا</option>
-                                                        <option value="-7">(GMT-07:00) چیهواهوا، لاپاز، مازاتلان</option>
-                                                        <option value="-7">(GMT-07:00) به وقت کوهستان (ایالات متحده و کانادا)</option>
-                                                        <option value="-6">(GMT-06:00) آمریکای مرکزی</option>
-                                                        <option value="-6">(GMT-06:00) به وقت مرکزی (ایالات متحده و کانادا)</option>
-                                                        <option value="-6">(GMT-06:00) گوادالاخارا، مکزیکو سیتی، مونتری</option>
-                                                        <option value="-6">(GMT-06:00) ساسکاچوان</option>
-                                                        <option value="-5">(GMT-05:00) بوگوتا، لیما، کیتو، ریو برانکو</option>
-                                                        <option value="-5">(GMT-05:00) به وقت شرقی (ایالات متحده و کانادا)</option>
-                                                        <option value="-5">(GMT-05:00) ایندیانا (شرق)</option>
-                                                        <option value="-4">(GMT-04:00) به وقت اقیانوس اطلس (کانادا)</option>
-                                                        <option value="-4">(GMT-04:00) کاراکاس، لاپاز</option>
-                                                    </select><span class="select2 select2-container select2-container--default" dir="rtl" data-select2-id="3" style="width: 580.885px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-timeZones-container"><span class="select2-selection__rendered" id="select2-timeZones-container" role="textbox" aria-readonly="true"><span class="select2-selection__placeholder">(GMT-12:00) International Date Line West</span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span></div>
-                                                </div>
-                                                <div class="col-12 col-md-6">
-                                                    <label class="form-label mb-0" for="unitSystemDropdown">سیستم واحد</label>
-                                                    <div class="position-relative"><select class="select2 form-select select2-hidden-accessible" data-placeholder="سیستم بین المللی" id="unitSystemDropdown" data-select2-id="unitSystemDropdown" tabindex="-1" aria-hidden="true">
-                                                        <option value="" data-select2-id="6">متریک</option>
-                                                        <option value="metric">metric</option>
-                                                        <option value="imperial">imperial</option>
-                                                        <option value="us">us</option>
-                                                        <option value="si">سیستم بین المللی</option>
-                                                    </select><span class="select2 select2-container select2-container--default" dir="rtl" data-select2-id="5" style="width: 282.438px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-unitSystemDropdown-container"><span class="select2-selection__rendered" id="select2-unitSystemDropdown-container" role="textbox" aria-readonly="true"><span class="select2-selection__placeholder">سیستم بین المللی</span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span></div>
-                                                </div>
-                                                <div class="col-12 col-md-6">
-                                                    <label class="form-label mb-0" for="weightUnits">واحد وزن پیش فرض</label>
-                                                    <div class="position-relative"><select class="select2 form-select select2-hidden-accessible" data-placeholder="کیلوگرم" id="weightUnits" data-select2-id="weightUnits" tabindex="-1" aria-hidden="true">
-                                                        <option value="" data-select2-id="8">...</option>
-                                                        <option value="kg">کیلوگرم</option>
-                                                        <option value="lb">پوند</option>
-                                                        <option value="g">گرم</option>
-                                                        <option value="mg">میلی گرم</option>
-                                                    </select><span class="select2 select2-container select2-container--default" dir="rtl" data-select2-id="7" style="width: 282.438px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-weightUnits-container"><span class="select2-selection__rendered" id="select2-weightUnits-container" role="textbox" aria-readonly="true"><span class="select2-selection__placeholder">کیلوگرم</span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card mb-4">
-                                        <div class="card-header">
-                                            <div class="card-title mb-0">
-                                                <h5 class="m-0 mb-1">واحد ارز</h5>
-                                                <p class="text-muted mb-0">ارزی که محصولات شما با آن فروخته می شود.</p>
-                                            </div>
-                                        </div>
-                                        <div class="card-body">
-                                            <div>
-                                                <label class="form-label mb-0" for="currency-store">واحد پول</label>
-                                                <div class="position-relative"><select class="select2 form-select select2-hidden-accessible" data-placeholder="واحد پول فروشگاه" id="currency-store" data-select2-id="currency-store" tabindex="-1" aria-hidden="true">
-                                                    <option value="" data-select2-id="10">انتخاب ...</option>
-                                                    <option value="IRT">ءتء</option>
-                                                    <option value="IRR">ءرء</option>
-                                                    <option value="usd">USD</option>
-                                                    <option value="euro">یورو</option>
-                                                    <option value="pound">پوند</option>
-                                                    <option value="bitcoin">بیت کوین</option>
-                                                </select><span class="select2 select2-container select2-container--default" dir="rtl" data-select2-id="9" style="width: 580.885px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-currency-store-container"><span class="select2-selection__rendered" id="select2-currency-store-container" role="textbox" aria-readonly="true"><span class="select2-selection__placeholder">واحد پول فروشگاه</span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card mb-4">
-                                        <div class="card-header">
-                                            <div class="card-title mb-0">
-                                                <h5 class="m-0 mb-1">فرمت کد سفارشات</h5>
-                                                <p class="text-muted mb-0"> در صفحه سفارشات، صفحات مشتری و اعلان های سفارش مشتری برای شناسایی سفارش ها نشان داده شده است.</p>
-                                            </div>
-                                        </div>
-                                        <div class="card-body">
-                                            <div class="row mb-3 g-3">
-                                                <div class="col-12 col-md-6">
-                                                    <label class="form-label mb-0" for="ecommerce-settings-details-prefix">پیشوند</label>
-                                                    <div class="input-group input-group-merge">
-                                                        <span class="input-group-text text-muted">#</span>
-                                                        <input aria-label="پیشوند" class="form-control" id="ecommerce-settings-details-prefix" min="0" name="prefix" type="number">
+                        
+                        <div class="row justify-content-center">
+                            <div class="col-lg-12 mt-4">
+                                <div class="card shadow border-0 rounded">
+                                    <div class="card-body">
+                                        <h5 class="card-title">معرفی:</h5>
+                                        <p class="text-muted">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است .</p>
+        
+                                        <h5 class="card-title"> توافق نامه های کاربر:</h5>
+                                        <p class="text-muted">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد</p>
+                                        <p class="text-muted"> این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.</p>
+                                        <p class="text-muted">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است .</p>
+                                        
+                                        <h5 class="card-title"> محدودیت ها: </h5>
+                                        <p class="text-muted"> شما به طور خاص از موارد زیر محدود شده اید: </p>
+                                        <ul class="list-unstyled text-muted">
+                                            <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left fea icon-sm ms-2"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg> راه حل های بازاریابی دیجیتال برای فردا </li>
+                                            <li class="mt-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left fea icon-sm ms-2"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg> آژانس بازاریابی با استعداد و با تجربه ما </li>
+                                            <li class="mt-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left fea icon-sm ms-2"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg> پوست خود را متناسب با نام تجاری خود ایجاد کنید </li>
+                                            <li class="mt-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left fea icon-sm ms-2"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg> راه حل های بازاریابی دیجیتال برای فردا </li>
+                                            <li class="mt-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left fea icon-sm ms-2"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg> آژانس بازاریابی با استعداد و با تجربه ما </li>
+                                            <li class="mt-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left fea icon-sm ms-2"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg> پوست خود را متناسب با نام تجاری خود ایجاد کنید </li>
+                                        </ul>
+        
+                                        <h5 class="card-title"> پرسش و پاسخ کاربران: </h5>
+                                        <div class="accordion mt-4" id="accordionExample">
+                                            <div class="accordion-item border rounded">
+                                                <h2 class="accordion-header" id="headingOne">
+                                                    <button class="accordion-button border-0 bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                        چگونه کار می کند؟
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseOne" class="accordion-collapse border-0 collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body text-muted">
+                                                       لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
                                                     </div>
-                                                    <p class="text-muted mb-0 pt-2">شناسه سفارش شما به صورت #1001، #1002، #1003 ظاهر می شود.</p>
                                                 </div>
-                                                <div class="col-12 col-md-6">
-                                                    <label class="form-label mb-0" for="ecommerce-settings-sender-suffix">پسوند</label>
-                                                    <input aria-label="Suffix" class="form-control" id="ecommerce-settings-sender-suffix" name="suffix" type="text">
+                                            </div>
+                                            
+                                            <div class="accordion-item border rounded mt-2">
+                                                <h2 class="accordion-header" id="headingTwo">
+                                                    <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                     آیا برای استفاده از داکتریس به طراح نیاز دارم؟
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseTwo" class="accordion-collapse border-0 collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body text-muted">
+                                                       لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
+                                                    </div>
+                                                </div>
+                                            </div>
+                
+                                            <div class="accordion-item border rounded mt-2">
+                                                <h2 class="accordion-header" id="headingThree">
+                                                    <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                        برای شروع فروش چه کاری باید انجام دهم؟
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseThree" class="accordion-collapse border-0 collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body text-muted">
+                                                       لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
+                                                    </div>
+                                                </div>
+                                            </div>
+                
+                                            <div class="accordion-item border rounded mt-2">
+                                                <h2 class="accordion-header" id="headingFour">
+                                                    <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                                        با دریافت سفارش چه اتفاقی می افتد؟
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseFour" class="accordion-collapse border-0 collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body text-muted">
+                                                       لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="d-flex justify-content-end gap-3">
-                                        <button class="btn btn-label-secondary waves-effect" type="reset">صرف نظر</button>
-                                        <a class="btn btn-primary waves-effect waves-light" href="#">اعمال تغییرات</a>
+        
+                                        <div class="mt-3">
+                                            <a href="#" class="btn btn-primary mt-2 ms-2">قبول</a>
+                                            <a href="#" class="btn btn-soft-primary mt-2">رد کردن</a>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <!-- /Options-->
+                            </div><!--end col-->
+                        </div><!--end row-->
                     </div>
                 </div>
                 <!-- / Content -->
@@ -894,6 +746,7 @@
 <script src="../assets/admin/js/main.js"></script>
 <!-- Page JS -->
 <script src="../assets/admin/js/dashboards-analytics.js"></script>
+<!--  --------------------------   -->
 </body>
 
 

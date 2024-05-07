@@ -6,10 +6,10 @@
 <head>
     <meta charset="UTF-8"/>
     <meta content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" name="viewport"/>
-    <title>داشبورد - تجزیه و تحلیل | Vuexy - قالب مدیریت بوت استرپ</title>
+    <title>زرین کد - سوالات متداول</title>
     <meta content="" name="description"/>
     <!-- Favicon -->
-    <link href="https://bytemaster.ir/demo/vuexy/landing/template/rtl/assets/img/favicon/favicon.ico" rel="icon" type="image/x-icon"/>
+    <link href="../assets/admin/img/logo/logo-mini.png" rel="icon" type="image/x-icon"/>
 
     <!-- Icons -->
     <link href="../assets/admin/vendor/fonts/fontawesome.css" rel="stylesheet"/>
@@ -23,13 +23,8 @@
     <link href="../assets/admin/vendor/libs/node-waves/node-waves.css" rel="stylesheet"/>
     <link href="../assets/admin/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet"/>
     <link href="../assets/admin/vendor/libs/typeahead-js/typeahead.css" rel="stylesheet"/>
-    <link href="../assets/admin/vendor/libs/apex-charts/apex-charts.css" rel="stylesheet"/>
-    <link href="../assets/admin/vendor/libs/swiper/swiper.css" rel="stylesheet"/>
-    <link href="../assets/admin/vendor/libs/datatables-bs5/datatables.bootstrap5.css" rel="stylesheet"/>
-    <link href="../assets/admin/vendor/libs/datatables-responsive-bs5/responsive.bootstrap5.css" rel="stylesheet"/>
-    <link href="../assets/admin/vendor/libs/datatables-checkboxes-jquery/datatables.checkboxes.css" rel="stylesheet"/>
     <!-- Page CSS -->
-    <link href="../assets/admin/vendor/css/pages/cards-advance.css" rel="stylesheet"/>
+    <link href="../assets/admin/vendor/css/pages/page-faq.css" rel="stylesheet"/>
     <!-- Helpers -->
     <script src="../assets/admin/vendor/js/helpers.js"></script>
     <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
@@ -63,16 +58,16 @@
             <ul class="menu-inner py-1">
                 <!-- Dashboards -->
                 <li class="menu-item">
-                    <a class="menu-link menu-toggle" href="index.html">
+                    <a class="menu-link" href="index.html">
                         <i class="menu-icon tf-icons fa fa-dashboard"></i>
                         <div>داشبورد‌</div>
                     </a>
                 </li>
                 <!-- Layouts -->
                 <li class="menu-item">
-                    <a class="menu-link menu-toggle" href="buy-template.html">
+                    <a class="menu-link" href="template.html">
                         <i class="menu-icon tf-icons fa fa-layer-group"></i>
-                        <div>خرید قالب</div>
+                        <div>قالب</div>
                     </a>
                     <!-- <ul class="menu-sub">
                         <li class="menu-item">
@@ -124,15 +119,15 @@
                 </li>
                 <!-- Front Pages -->
                 <li class="menu-item">
-                    <a class="menu-link menu-toggle" href="purchase-web.html">
+                    <a class="menu-link" href="add-project.html">
                         <i class="menu-icon tf-icons fa fa-archive"></i>
-                        <div>ثبت سایت</div>
+                        <div>ثبت پروژه</div>
                     </a>
                 </li>
                 <li class="menu-item">
-                    <a class="menu-link" href="purchased-web.html">
+                    <a class="menu-link" href="projects.html">
                         <i class="menu-icon tf-icons fa fa-archive"></i>
-                        <div>سایت های ثبت شده</div>
+                        <div>پروژه ها</div>
                     </a>
                 </li>
                 <li class="menu-item">
@@ -142,13 +137,13 @@
                     </a>
                 </li>
                 <li class="menu-item">
-                    <a class="menu-link menu-toggle" href="financial.html">
+                    <a class="menu-link" href="payment.html">
                         <i class="menu-icon fa fa-bar-chart"></i>
-                        <div>مالی</div>
+                        <div>حسابداری</div>
                     </a>
                 </li>
                 <li class="menu-item">
-                    <a class="menu-link menu-toggle" href="profile.html">
+                    <a class="menu-link" href="profile.html">
                         <i class="menu-icon fa fa-bar-chart"></i>
                         <div>پروفایل</div>
                     </a>
@@ -157,6 +152,18 @@
                     <a class="menu-link" href="support.html">
                         <i class="fa fa-mail-bulk menu-icon tf-icons" aria-hidden="true"></i>
                         <div>پشتیبانی</div>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-link" href="faqs.html">
+                        <i class="fa fa-mail-bulk menu-icon tf-icons" aria-hidden="true"></i>
+                        <div>سوالات متداول</div>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-link" href="terms.html">
+                        <i class="fa fa-mail-bulk menu-icon tf-icons" aria-hidden="true"></i>
+                        <div>مقررات و سیاست ها</div>
                     </a>
                 </li>
             </ul>
@@ -585,101 +592,373 @@
             <div class="content-wrapper">
                 <!-- Content -->
                 <div class="container-xxl flex-grow-1 container-p-y">
-                    <h4 class="py-3 mb-4">
-                        <span class="text-muted fw-light">صورتحساب /</span>
-                        لیست فاکتورها
-                    </h4>
-                    <!-- Invoice List Widget -->
-                    <div class="card mb-4">
-                        <div class="card-widget-separator-wrapper">
-                            <div class="card-body card-widget-separator">
-                                <div class="row gy-4 gy-sm-1">
-                                    <div class="col-sm-6 col-lg-3">
-                                        <div class="d-flex justify-content-between align-items-start card-widget-1 border-end pb-3 pb-sm-0">
-                                            <div>
-                                                <h3 class="mb-1">24</h3>
-                                                <p class="mb-0">مشتریان</p>
-                                            </div>
-                                            <span class="avatar me-sm-4">
-                                                <span class="avatar-initial bg-label-secondary rounded">
-                                                    <i class="ti ti-user ti-md"></i>
-                                                </span>
+                    <div class="d-md-flex justify-content-between mb-5">
+                        <h5 class="mb-0">سوالات متداول</h5>
+
+                        <nav aria-label="breadcrumb" class="d-inline-block mt-4 mt-sm-0">
+                            <ul class="breadcrumb bg-transparent rounded mb-0 p-0">
+                                <li class="breadcrumb-item"><a href="index.html">زرین کد</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">سوالات متداول</li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="faq-header d-flex flex-column justify-content-center align-items-center rounded">
+                        <h3 class="text-center">سلام، چطور می&zwnj;تونیم کمک&zwnj;تون کنیم؟</h3>
+                        <div class="input-wrapper mb-3 input-group input-group-lg input-group-merge">
+                            <span class="input-group-text" id="basic-addon1">
+                                <i class="ti ti-search h-mirror"></i>
+                            </span>
+                            <input aria-describedby="basic-addon1" aria-label="جستجو" class="form-control" placeholder="جستجو" type="text">
+                        </div>
+                        <p class="text-center mb-0 px-3">سوالات احتمالی ای که برایتان پیش می آید در زیر آمده است</p>
+                    </div>
+                    <div class="row mt-4">
+                        <!-- Navigation -->
+                        <div class="col-lg-3 col-md-4 col-12 mb-md-0 mb-3">
+                            <div class="d-flex justify-content-between flex-column mb-2 mb-md-0">
+                                <ul class="nav nav-align-left nav-pills flex-column" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link active" data-bs-target="#payment" data-bs-toggle="tab" aria-selected="true" role="tab">
+                                            <i class="ti ti-credit-card me-1 ti-sm"></i>
+                                            <span class="align-middle fw-medium">پرداخت و ثبت سفارش</span>
+                                        </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" data-bs-target="#delivery" data-bs-toggle="tab" aria-selected="false" tabindex="-1" role="tab">
+                                            <i class="ti ti-briefcase me-1 ti-sm"></i>
+                                            <span class="align-middle fw-medium">ارسال مرسولات پستی</span>
+                                        </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" data-bs-target="#cancellation" data-bs-toggle="tab" aria-selected="false" tabindex="-1" role="tab">
+                                            <i class="ti ti-rotate-clockwise-2 me-1 ti-sm"></i>
+                                            <span class="align-middle fw-medium">برگشت سفارش</span>
+                                        </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" data-bs-target="#orders" data-bs-toggle="tab" aria-selected="false" tabindex="-1" role="tab">
+                                            <i class="ti ti-box me-1 ti-sm"></i>
+                                            <span class="align-middle fw-medium">سفارشات من</span>
+                                        </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" data-bs-target="#product" data-bs-toggle="tab" aria-selected="false" tabindex="-1" role="tab">
+                                            <i class="ti ti-settings me-1 ti-sm"></i>
+                                            <span class="align-middle fw-medium">محصولات و خدمات</span>
+                                        </button>
+                                    </li>
+                                </ul>
+                                <div class="d-none d-md-block">
+                                    <div class="mt-4">
+                                        <img alt="پرسش و پاسخ تصویر" class="img-fluid" src="../assets/admin/img/illustrations/girl-sitting-with-laptop.png" width="270">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /Navigation -->
+                        <!-- FAQ's -->
+                        <div class="col-lg-9 col-md-8 col-12">
+                            <div class="tab-content py-0">
+                                <div class="tab-pane fade show active" id="payment" role="tabpanel">
+                                    <div class="d-flex mb-3 gap-3">
+                                        <div class="mt-auto mb-auto">
+                                            <span class="badge bg-label-primary rounded-2 p-2">
+                                                <i class="ti ti-credit-card ti-lg"></i>
                                             </span>
                                         </div>
-                                        <hr class="d-none d-sm-block d-lg-none me-4">
-                                    </div>
-                                    <div class="col-sm-6 col-lg-3">
-                                        <div class="d-flex justify-content-between align-items-start card-widget-2 border-end pb-3 pb-sm-0">
-                                            <div>
-                                                <h3 class="mb-1">165</h3>
-                                                <p class="mb-0">فاکتورها</p>
-                                            </div>
-                                            <span class="avatar me-lg-4">
-                                                <span class="avatar-initial bg-label-secondary rounded">
-                                                    <i class="ti ti-file-invoice ti-md"></i>
-                                                </span>
-                                            </span>
-                                        </div>
-                                        <hr class="d-none d-sm-block d-lg-none">
-                                    </div>
-                                    <div class="col-sm-6 col-lg-3">
-                                        <div class="d-flex justify-content-between align-items-start border-end pb-3 pb-sm-0 card-widget-3">
-                                            <div>
-                                                <h3 class="mb-1"><bdi><svg class="toman">
-                                            <use xlink:href="#toman">
-                                                <symbol id="toman" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
-                                                    <path clip-rule="evenodd" d="M3.057 1.742L3.821 1l.78.75-.776.741-.768-.749zm3.23 2.48c0 .622-.16 1.111-.478 1.467-.201.221-.462.39-.783.505a3.251 3.251 0 01-1.083.163h-.555c-.421 0-.801-.074-1.139-.223a2.045 2.045 0 01-.9-.738A2.238 2.238 0 011 4.148c0-.059.001-.117.004-.176.03-.55.204-1.158.525-1.827l1.095.484c-.257.532-.397 1-.419 1.403-.002.04-.004.08-.004.12 0 .252.055.458.166.618a.887.887 0 00.5.354c.085.028.178.048.278.06.079.01.16.014.243.014h.555c.458 0 .769-.081.933-.244.14-.139.21-.383.21-.731V2.02h1.2v2.202zm5.433 3.184l-.72-.7.709-.706.735.707-.724.7zm-2.856.308c.542 0 .973.19 1.293.569.297.346.445.777.445 1.293v.364h.18v-.004h.41c.221 0 .377-.028.467-.084.093-.055.14-.14.14-.258v-.069c.004-.243.017-1.044 0-1.115L13 8.05v1.574a1.4 1.4 0 01-.287.863c-.306.405-.804.607-1.495.607h-.627c-.061.733-.434 1.257-1.117 1.573-.267.122-.58.21-.937.265a5.845 5.845 0 01-.914.067v-1.159c.612 0 1.072-.082 1.38-.247.25-.132.376-.298.376-.499h-.515c-.436 0-.807-.113-1.113-.339-.367-.273-.55-.667-.55-1.18 0-.488.122-.901.367-1.24.296-.415.728-.622 1.296-.622zm.533 2.226v-.364c0-.217-.048-.389-.143-.516a.464.464 0 00-.39-.187.478.478 0 00-.396.187.705.705 0 00-.136.449.65.65 0 00.003.067c.008.125.066.22.177.283.093.054.21.08.352.08h.533zM9.5 6.707l.72.7.724-.7L10.209 6l-.709.707zm-6.694 4.888h.03c.433-.01.745-.106.937-.29.024.012.065.035.12.068l.074.039.081.042c.135.073.261.133.379.18.345.146.67.22.977.22a1.216 1.216 0 00.87-.34c.3-.285.449-.714.449-1.286a2.19 2.19 0 00-.335-1.145c-.299-.457-.732-.685-1.3-.685-.502 0-.916.192-1.242.575-.113.132-.21.284-.294.456-.032.062-.06.125-.084.191a.504.504 0 00-.03.078 1.67 1.67 0 00-.022.06c-.103.309-.171.485-.205.53-.072.09-.214.14-.427.147-.123-.005-.209-.03-.256-.076-.057-.054-.085-.153-.085-.297V7l-1.201-.5v3.562c0 .261.048.496.143.703.071.158.168.296.29.413.123.118.266.211.43.28.198.084.42.13.665.136v.001h.036zm2.752-1.014a.778.778 0 00.044-.353.868.868 0 00-.165-.47c-.1-.134-.217-.201-.35-.201-.18 0-.33.103-.447.31-.042.071-.08.158-.114.262a2.434 2.434 0 00-.04.12l-.015.053-.015.046c.142.118.323.216.544.293.18.062.325.092.433.092.044 0 .086-.05.125-.152z" fill-rule="evenodd"></path>
-                                                </symbol>
-                                            </use>
-                                        </svg>2.46k</bdi></h3>
-                                                <p class="mb-0">پرداخت شده</p>
-                                            </div>
-                                            <span class="avatar me-sm-4">
-                                                <span class="avatar-initial bg-label-secondary rounded">
-                                                    <i class="ti ti-checks ti-md"></i>
-                                                </span>
-                                            </span>
+                                        <div>
+                                            <h5 class="mb-2">
+                                                <span class="align-middle fw-semibold">سوالات پرداخت</span>
+                                            </h5>
+                                            <small>سوالات متداول در مورد پرداخت</small>
                                         </div>
                                     </div>
-                                    <div class="col-sm-6 col-lg-3">
-                                        <div class="d-flex justify-content-between align-items-start">
-                                            <div>
-                                                <h3 class="mb-1">
-                                                    <bdi><svg class="toman">
-                                            <use xlink:href="#toman">
-                                                <symbol id="toman" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
-                                                    <path clip-rule="evenodd" d="M3.057 1.742L3.821 1l.78.75-.776.741-.768-.749zm3.23 2.48c0 .622-.16 1.111-.478 1.467-.201.221-.462.39-.783.505a3.251 3.251 0 01-1.083.163h-.555c-.421 0-.801-.074-1.139-.223a2.045 2.045 0 01-.9-.738A2.238 2.238 0 011 4.148c0-.059.001-.117.004-.176.03-.55.204-1.158.525-1.827l1.095.484c-.257.532-.397 1-.419 1.403-.002.04-.004.08-.004.12 0 .252.055.458.166.618a.887.887 0 00.5.354c.085.028.178.048.278.06.079.01.16.014.243.014h.555c.458 0 .769-.081.933-.244.14-.139.21-.383.21-.731V2.02h1.2v2.202zm5.433 3.184l-.72-.7.709-.706.735.707-.724.7zm-2.856.308c.542 0 .973.19 1.293.569.297.346.445.777.445 1.293v.364h.18v-.004h.41c.221 0 .377-.028.467-.084.093-.055.14-.14.14-.258v-.069c.004-.243.017-1.044 0-1.115L13 8.05v1.574a1.4 1.4 0 01-.287.863c-.306.405-.804.607-1.495.607h-.627c-.061.733-.434 1.257-1.117 1.573-.267.122-.58.21-.937.265a5.845 5.845 0 01-.914.067v-1.159c.612 0 1.072-.082 1.38-.247.25-.132.376-.298.376-.499h-.515c-.436 0-.807-.113-1.113-.339-.367-.273-.55-.667-.55-1.18 0-.488.122-.901.367-1.24.296-.415.728-.622 1.296-.622zm.533 2.226v-.364c0-.217-.048-.389-.143-.516a.464.464 0 00-.39-.187.478.478 0 00-.396.187.705.705 0 00-.136.449.65.65 0 00.003.067c.008.125.066.22.177.283.093.054.21.08.352.08h.533zM9.5 6.707l.72.7.724-.7L10.209 6l-.709.707zm-6.694 4.888h.03c.433-.01.745-.106.937-.29.024.012.065.035.12.068l.074.039.081.042c.135.073.261.133.379.18.345.146.67.22.977.22a1.216 1.216 0 00.87-.34c.3-.285.449-.714.449-1.286a2.19 2.19 0 00-.335-1.145c-.299-.457-.732-.685-1.3-.685-.502 0-.916.192-1.242.575-.113.132-.21.284-.294.456-.032.062-.06.125-.084.191a.504.504 0 00-.03.078 1.67 1.67 0 00-.022.06c-.103.309-.171.485-.205.53-.072.09-.214.14-.427.147-.123-.005-.209-.03-.256-.076-.057-.054-.085-.153-.085-.297V7l-1.201-.5v3.562c0 .261.048.496.143.703.071.158.168.296.29.413.123.118.266.211.43.28.198.084.42.13.665.136v.001h.036zm2.752-1.014a.778.778 0 00.044-.353.868.868 0 00-.165-.47c-.1-.134-.217-.201-.35-.201-.18 0-.33.103-.447.31-.042.071-.08.158-.114.262a2.434 2.434 0 00-.04.12l-.015.053-.015.046c.142.118.323.216.544.293.18.062.325.092.433.092.044 0 .086-.05.125-.152z" fill-rule="evenodd"></path>
-                                                </symbol>
-                                            </use>
-                                        </svg>876</bdi>
-                                                </h3>
-                                                <p class="mb-0">پرداخت نشده</p>
+                                    <div class="accordion" id="accordionPayment">
+                                        <div class="card accordion-item">
+                                            <h2 class="accordion-header">
+                                                <button aria-controls="accordionPayment-2" class="accordion-button collapsed" data-bs-target="#accordionPayment-2" data-bs-toggle="collapse" type="button"> چگونه سفارش خود را پرداخت کنم؟</button>
+                                            </h2>
+                                            <div class="accordion-collapse collapse" id="accordionPayment-2">
+                                                <div class="accordion-body"> ما کارت&zwnj;های Visa®، MasterCard®، American Express® و PayPal® را قبول می&zwnj;کنیم. تمام اطلاعاتی که به سرورهای ما ارسال می&zwnj;شوند، به صورت رمز شده است؛ بنابراین می&zwnj;توانید با اطمینان کامل به اینکه اطلاعات کارت اعتباری شما در امان و ایمن نگه داشته می&zwnj;شود، اعتماد کنید.</div>
                                             </div>
-                                            <span class="avatar">
-                                                <span class="avatar-initial bg-label-secondary rounded">
-                                                    <i class="ti ti-circle-off ti-md"></i>
-                                                </span>
+                                        </div>
+                                        <div class="card accordion-item active">
+                                            <h2 class="accordion-header">
+                                                <button aria-controls="accordionPayment-1" aria-expanded="true" class="accordion-button" data-bs-target="#accordionPayment-1" data-bs-toggle="collapse" type="button"> چه زمانی پرداخت برای سفارش من انجام می شود؟</button>
+                                            </h2>
+                                            <div class="accordion-collapse collapse show" id="accordionPayment-1">
+                                                <div class="accordion-body"> پرداخت در طول فرآیند تسویه حساب انجام می&zwnj;شود زمانی که برای سفارش خود پرداخت می&zwnj;کنید. شماره سفارشی که در صفحه تأیید نمایش داده می&zwnj;شود نشان&zwnj;دهنده این است که پرداخت با موفقیت انجام شده است.</div>
+                                            </div>
+                                        </div>
+                                        <div class="card accordion-item">
+                                            <h2 class="accordion-header">
+                                                <button aria-controls="accordionPayment-3" class="accordion-button collapsed" data-bs-target="#accordionPayment-3" data-bs-toggle="collapse" type="button"> اگر سوال دیگری داشتم چکاری انجام بدم؟</button>
+                                            </h2>
+                                            <div class="accordion-collapse collapse" id="accordionPayment-3">
+                                                <div class="accordion-body"> برای هر مشکل فنی که با وب&zwnj;سایت ما روبرو می&zwnj;شوید، لطفاً با ما تماس بگیرید. شما می&zwnj;توانید با مراجعه به
+                                                    <a href="javascript:void(0);">پورتال پشتیبانی ما</a>
+                                                    با ما تماس بگیرید، یا می&zwnj;توانید با شماره تلفن رایگان
+                                                    <span class="fw-medium">
+                                                        <bdi>1-000-000-000</bdi>
+                                                    </span>
+                                                    تماس بگیرید، یا ایمیل بزنید به
+                                                    <a href="javascript:void(0);">
+                                                        <bdi><span class="__cf_email__" data-cfemail="e58a97818097a5868a8895848b9c88848c89cb868a88">[email&nbsp;protected]</span></bdi>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card accordion-item">
+                                            <h2 class="accordion-header">
+                                                <button aria-controls="accordionPayment-5" class="accordion-button collapsed" data-bs-target="#accordionPayment-5" data-bs-toggle="collapse" type="button"> ایا اشتراک من به طور خودکار تمدید می شود؟</button>
+                                            </h2>
+                                            <div class="accordion-collapse collapse" id="accordionPayment-5">
+                                                <div class="accordion-body"> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد</div>
+                                            </div>
+                                        </div>
+                                        <div class="card accordion-item">
+                                            <h2 class="accordion-header">
+                                                <button aria-controls="accordionPayment-4" class="accordion-button collapsed" data-bs-target="#accordionPayment-4" data-bs-toggle="collapse" type="button"> کدام لایسنس برای یک محصول نهایی استفاده می&zwnj;شود که فقط برای کاربران پرداخت&zwnj;کننده قابل دسترس است؟</button>
+                                            </h2>
+                                            <div class="accordion-collapse collapse" id="accordionPayment-4">
+                                                <div class="accordion-body"> اگر کاربرانی دارید که هزینه می&zwnj;پردازند یا هرگونه محصولات SaaS را توسعه می&zwnj;دهید، نیاز به یک مجوز گسترده دارید. برای هر محصول، شما به یک مجوز نیاز دارید. همچنین می&zwnj;توانید به&zwnj;صورت رایگان به به&zwnj;روزرسانی&zwnj;های دائمی دسترسی داشته باشید.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="delivery" role="tabpanel">
+                                    <div class="d-flex mb-3 gap-3">
+                                        <div class="mt-auto mb-auto">
+                                            <span class="badge bg-label-primary rounded-2 p-2">
+                                                <i class="ti ti-briefcase ti-lg"></i>
                                             </span>
+                                        </div>
+                                        <div>
+                                            <h5 class="mb-2">
+                                                <span class="align-middle fw-semibold">سوالات ارسال کالا</span>
+                                            </h5>
+                                            <small>سوالات متداول در مورد ارسال کال</small>
+                                        </div>
+                                    </div>
+                                    <div class="accordion" id="accordionDelivery">
+                                        <div class="card accordion-item active">
+                                            <h2 class="accordion-header">
+                                                <button aria-controls="accordionDelivery-1" aria-expanded="true" class="accordion-button" data-bs-target="#accordionDelivery-1" data-bs-toggle="collapse" type="button"> چگونه سفارش من را ارسال می کنید؟</button>
+                                            </h2>
+                                            <div class="accordion-collapse collapse show" id="accordionDelivery-1">
+                                                <div class="accordion-body"> برای محصولات بزرگ، ما محصول شما را از طریق یک شرکت لجستیک شخص ثالث تحویل می&zwnj;دهیم که به شما خدمات تحویل زمان&zwnj;بندی "اتاق انتخابی" را ارائه می&zwnj;دهد. برای محصولات کوچک، ما تحویل رایگان پارسل ارائه می&zwnj;دهیم.</div>
+                                            </div>
+                                        </div>
+                                        <div class="card accordion-item">
+                                            <h2 class="accordion-header">
+                                                <button aria-controls="accordionDelivery-2" class="accordion-button collapsed" data-bs-target="#accordionDelivery-2" data-bs-toggle="collapse" type="button"> هزینه تحویل سفارش من چقدر است؟</button>
+                                            </h2>
+                                            <div class="accordion-collapse collapse" id="accordionDelivery-2">
+                                                <div class="accordion-body"> هزینه تحویل زمان&zwnj;بندی برای هر سفارش ممکن است 70000 ءتء یا 100000 ءتء باشد، به توجه به کد پستی مقصد. تحویل پارسل رایگان است.</div>
+                                            </div>
+                                        </div>
+                                        <div class="card accordion-item">
+                                            <h2 class="accordion-header">
+                                                <button aria-controls="accordionDelivery-4" class="accordion-button collapsed" data-bs-target="#accordionDelivery-4" data-bs-toggle="collapse" type="button"> اگر محصول من اسیب ببیند چه باید کرد؟</button>
+                                            </h2>
+                                            <div class="accordion-collapse collapse" id="accordionDelivery-4">
+                                                <div class="accordion-body"> ما به سرعت هر محصولی که در حین انتقال آسیب ببیند، جایگزین می&zwnj;کنیم. فقط با تماس با
+                                                    <a href="javascript:void(0);">تیم پشتیبانی</a>
+                                                    ما، ما را در زمان کمتر از 48 ساعت از ورود محصول مطلع کنید.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="cancellation" role="tabpanel">
+                                    <div class="d-flex mb-3 gap-3">
+                                        <div class="mt-auto mb-auto">
+                                            <span class="badge bg-label-primary rounded-2 p-2">
+                                                <i class="ti ti-rotate-clockwise-2 ti-lg"></i>
+                                            </span>
+                                        </div>
+                                        <div>
+                                            <h5 class="mb-2">
+                                                <span class="align-middle fw-semibold">سوالات بازگشت سفارش</span>
+                                            </h5>
+                                            <small>سوالات متداول در مورد بازگشت سفارش</small>
+                                        </div>
+                                    </div>
+                                    <div class="accordion" id="accordionCancellation">
+                                        <div class="card accordion-item active">
+                                            <h2 class="accordion-header">
+                                                <button aria-controls="accordionCancellation-1" aria-expanded="true" class="accordion-button" data-bs-target="#accordionCancellation-1" data-bs-toggle="collapse" type="button"> ایا می توانم سفارش خود را لغو کنم؟</button>
+                                            </h2>
+                                            <div class="accordion-collapse collapse show" id="accordionCancellation-1">
+                                                <div class="accordion-body">
+                                                    <p> سفارشات تحویل زمان&zwnj;دار می&zwnj;توانند ۷۲ ساعت قبل از تاریخ تحویل انتخابی شما لغو شوند و مبلغ کامل به شما بازگردانده می&zwnj;شود.</p>
+                                                    <p class="mb-0"> سفارشات تحویل پارسل قابل لغو نیستند؛ اما درخواست شما برای برچسب بازگشت رایگان ممکن است ارائه شود.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card accordion-item">
+                                            <h2 class="accordion-header">
+                                                <button aria-controls="accordionCancellation-2" class="accordion-button collapsed" data-bs-target="#accordionCancellation-2" data-bs-toggle="collapse" type="button"> ایا می توانم محصول خود را بازگردانم؟</button>
+                                            </h2>
+                                            <div class="accordion-collapse collapse" id="accordionCancellation-2">
+                                                <div class="accordion-body"> شما می&zwnj;توانید محصول خود را در ۱۵ روز از تاریخ تحویل با تماس با
+                                                    <a href="javascript:void(0);">تیم پشتیبانی</a>
+                                                    بازگردانید. تمام کالاهای بازگشتی باید در بسته&zwnj;بندی اصلی و با تمام موارد اصلی بازگشت داده شوند.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card accordion-item">
+                                            <h2 class="accordion-header">
+                                                <button aria-controls="accordionCancellation-3" class="accordion-button collapsed" data-bs-target="#accordionCancellation-3" data-bs-toggle="collapse" type="button"> از کجا می توانم وضعیت بازگشت را مشاهده کنم؟</button>
+                                            </h2>
+                                            <div class="accordion-collapse collapse" id="accordionCancellation-3">
+                                                <div class="accordion-body">
+                                                    <p>محصول را از
+                                                        <a dideo-checked="true" href="javascript:void(0);">سفارش&zwnj;ها</a>
+                                                        پیدا کنید
+                                                    </p>
+                                                    <p class="mb-0">وضعیت
+                                                        <span class="fw-medium">بازگشت/استرداد</span>
+                                                        را انتخاب کنید
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="orders" role="tabpanel">
+                                    <div class="d-flex mb-3 gap-3">
+                                        <div class="mt-auto mb-auto">
+                                            <span class="badge bg-label-primary rounded-2 p-2">
+                                                <i class="ti ti-box ti-lg"></i>
+                                            </span>
+                                        </div>
+                                        <div>
+                                            <h5 class="mb-2">
+                                                <span class="align-middle fw-semibold">سوالات ثبت سفارشات</span>
+                                            </h5>
+                                            <small>سوالات متداول در مورد ثبت سفارشات</small>
+                                        </div>
+                                    </div>
+                                    <div class="accordion" id="accordionOrders">
+                                        <div class="card accordion-item active">
+                                            <h2 class="accordion-header">
+                                                <button aria-controls="accordionOrders-1" aria-expanded="true" class="accordion-button" data-bs-target="#accordionOrders-1" data-bs-toggle="collapse" type="button"> ایا سفارش من موفقیت امیز بوده است؟</button>
+                                            </h2>
+                                            <div class="accordion-collapse collapse show" id="accordionOrders-1">
+                                                <div class="accordion-body">
+                                                    <p> تمام معاملات سفارش موفق پس از پردازش سفارش، یک ایمیل تایید سفارش دریافت خواهند کرد. اگر ایمیل تایید سفارش خود را ظرف 24 ساعت دریافت نکرده اید، ایمیل ناخواسته یا پوشه اسپم خود را بررسی کنید.</p>
+                                                    <p class="mb-0">
+                                                        متناوبا، وارد حساب خود شوید تا خلاصه سفارش خود را بررسی کنید. اگر حساب کاربری ندارید، می توانید با تیم مراقبت از مشتری ما در
+                                                        <span class="fw-medium">
+                                                            <bdi>1-000-000-000</bdi>
+                                                            تماس بگیرید
+                                                        </span>
+                                                        .
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card accordion-item">
+                                            <h2 class="accordion-header">
+                                                <button aria-controls="accordionOrders-2" class="accordion-button collapsed" data-bs-target="#accordionOrders-2" data-bs-toggle="collapse" type="button"> کد تخفیف من کار نمی کند، چه کاری می توانم انجام دهم؟</button>
+                                            </h2>
+                                            <div class="accordion-collapse collapse" id="accordionOrders-2">
+                                                <div class="accordion-body"> اگر با کد تخفیف مشکل دارید، لطفا برای کمک با ما
+                                                    <span class="fw-medium">تماس بگیرید
+                                                        <bdi>1 000 000 000</bdi>
+                                                    </span>
+                                                    .
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card accordion-item">
+                                            <h2 class="accordion-header">
+                                                <button aria-controls="accordionOrders-3" class="accordion-button collapsed" data-bs-target="#accordionOrders-3" data-bs-toggle="collapse" type="button"> چگونه سفارشات خود را پیگیری کنم؟</button>
+                                            </h2>
+                                            <div class="accordion-collapse collapse" id="accordionOrders-3">
+                                                <div class="accordion-body">
+                                                    <p> اگر حساب کاربری دارید فقط از
+                                                        <a href="javascript:void(0);">اینجا</a>
+                                                        وارد حساب خود شوید و "سفارشات من" را انتخاب
+                                                        <span class="fw-medium">کنید</span>
+                                                        .
+                                                    </p>
+                                                    <p class="mb-0"> اگر شما یک حساب مهمان پیگیری سفارش خود را از اینجا با استفاده از شماره سفارش و ادرس ایمیل.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="product" role="tabpanel">
+                                    <div class="d-flex mb-3 gap-3">
+                                        <div class="mt-auto mb-auto">
+                                            <span class="badge bg-label-primary rounded-2 p-2">
+                                                <i class="ti ti-camera ti-lg"></i>
+                                            </span>
+                                        </div>
+                                        <div>
+                                            <h5 class="mb-2">
+                                                <span class="align-middle fw-semibold">سوالات محصولات و خدمات</span>
+                                            </h5>
+                                            <small>سوالات متداول در مورد محصولات و خدمات</small>
+                                        </div>
+                                    </div>
+                                    <div class="accordion" id="accordionProduct">
+                                        <div class="card accordion-item active">
+                                            <h2 class="accordion-header">
+                                                <button aria-controls="accordionProduct-1" aria-expanded="true" class="accordion-button" data-bs-target="#accordionProduct-1" data-bs-toggle="collapse" type="button">
+                                                    آیا پس از ارسال سفارشم به من اطلاع داده خواهد شد؟
+                                                </button>
+                                            </h2>
+                                            <div class="accordion-collapse collapse show" id="accordionProduct-1">
+                                                <div class="accordion-body"> بله، ما یک ایمیل به شما ارسال خواهیم کرد هنگامی که سفارش شما ارسال شود. این ایمیل شامل اطلاعات ردیابی و سفارش خواهد بود.</div>
+                                            </div>
+                                        </div>
+                                        <div class="card accordion-item">
+                                            <h2 class="accordion-header">
+                                                <button aria-controls="accordionProduct-2" class="accordion-button collapsed" data-bs-target="#accordionProduct-2" data-bs-toggle="collapse" type="button">
+                                                    اطلاعات گارانتی را از کجا می&zwnj;توانم پیدا کنم؟
+                                                </button>
+                                            </h2>
+                                            <div class="accordion-collapse collapse" id="accordionProduct-2">
+                                                <div class="accordion-body"> ما به تولید محصولات با کیفیت متعهد هستیم. برای اطلاعات در مورد دوره گارانتی و خدمات گارانتی، به بخش گارانتی ما
+                                                    <a dideo-checked="true" href="javascript:void(0);">اینجا</a>
+                                                    مراجعه کنید.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card accordion-item">
+                                            <h2 class="accordion-header">
+                                                <button aria-controls="accordionProduct-3" class="accordion-button collapsed" data-bs-target="#accordionProduct-3" data-bs-toggle="collapse" type="button">
+                                                    چگونه می&zwnj;توانم پوشش گارانتی اضافی را خریداری کنم؟
+                                                </button>
+                                            </h2>
+                                            <div class="accordion-collapse collapse" id="accordionProduct-3">
+                                                <div class="accordion-body"> برای آرامش ذهن شما، ما طرح&zwnj;های گارانتی تمدید شده را ارائه می&zwnj;دهیم که سال (های) اضافی حفاظت به گارانتی استاندارد تولید کننده اضافه می&zwnj;کند. برای خرید یا کسب اطلاعات بیشتر در مورد برنامه گارانتی تمدید شده، به بخش گارانتی تمدید شده
+                                                    <a dideo-checked="true" href="javascript:void(0);">اینجا</a>
+                                                    مراجعه کنید.
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <!-- /FAQ's -->
                     </div>
-                    <!-- Invoice List Table -->
-                    <div class="card">
-                        <div class="card-datatable table-responsive">
-                            <div id="DataTables_Table_0_wrapper" class="dataTables_wrapper dt-bootstrap5 no-footer"><div class="row mx-1"><div class="col-12 col-md-6 d-flex align-items-center justify-content-center justify-content-md-start gap-2"><div class="dataTables_length" id="DataTables_Table_0_length"><label>نمایش <select name="DataTables_Table_0_length" aria-controls="DataTables_Table_0" class="form-select"><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select></label></div><div class="dt-action-buttons text-xl-end text-lg-start text-md-end text-start mt-md-0 mt-3"><div class="dt-buttons"><button class="dt-button btn btn-primary waves-effect waves-light" tabindex="0" aria-controls="DataTables_Table_0" type="button"><span><i class="ti ti-plus me-md-1"></i><span class="d-md-inline-block d-none">ایجاد فاکتور</span></span></button> </div></div></div><div class="col-12 col-md-6 d-flex align-items-center justify-content-end flex-column flex-md-row pe-3 gap-md-3"><div id="DataTables_Table_0_filter" class="dataTables_filter"><label><input type="search" class="form-control" placeholder="جستجو فاکتور" aria-controls="DataTables_Table_0"></label></div><div class="invoice_status mb-3 mb-md-0"></div></div></div><table class="invoice-list-table table border-top dataTable no-footer dtr-column" id="DataTables_Table_0" aria-describedby="DataTables_Table_0_info" style="width: 960px;">
-                                <thead>
-                                <tr><th class="control sorting dtr-hidden" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 29px; display: none;" aria-label=": activate to sort column ascending"></th><th class="sorting sorting_desc" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 108px;" aria-sort="descending" aria-label="#شناسه: activate to sort column ascending">#شناسه</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 66px;" aria-label="
-                                        
-                                    : activate to sort column ascending">
-                                        <i class="ti ti-trending-up text-secondary"></i>
-                                    </th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 99px;" aria-label="مشتری: activate to sort column ascending">مشتری</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 73px;" aria-label="مبلغ: activate to sort column ascending">مبلغ</th><th class="text-truncate sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 81px;" aria-label="تاریخ: activate to sort column ascending">تاریخ</th><th class="sorting_disabled" rowspan="1" colspan="1" style="width: 102px;" aria-label="وضعیت">وضعیت</th><th class="cell-fit sorting_disabled" rowspan="1" colspan="1" style="width: 44px;" aria-label="عملیات">عملیات</th></tr>
-                                </thead><tbody><tr class="odd"><td valign="top" colspan="7" class="dataTables_empty">Loading...</td></tr></tbody>
-                            </table><div class="row mx-2"><div class="col-sm-12 col-md-6"><div class="dataTables_info" id="DataTables_Table_0_info" role="status" aria-live="polite"></div></div><div class="col-sm-12 col-md-6"><div class="dataTables_paginate paging_simple_numbers" id="DataTables_Table_0_paginate"><ul class="pagination"><li class="paginate_button page-item previous disabled" id="DataTables_Table_0_previous"><a aria-controls="DataTables_Table_0" aria-disabled="true" role="link" data-dt-idx="previous" tabindex="0" class="page-link">قبلی</a></li><li class="paginate_button page-item next disabled" id="DataTables_Table_0_next"><a aria-controls="DataTables_Table_0" aria-disabled="true" role="link" data-dt-idx="next" tabindex="0" class="page-link">بعدی</a></li></ul></div></div></div></div>
+                    <!-- Contact -->
+                    <div class="row mt-5">
+                        <div class="col-12 text-center mb-4">
+                            <div class="badge bg-label-primary">پشتیبانی بیشتر</div>
+                            <h4 class="my-2">هنوز سوالی داری؟</h4>
+                            <p>اگر نمی توانید سوالی را در سوالات متداول ما پیدا کنید، می توانید با ما تماس بگیرید. ما به زودی به شما پاسخ خواهیم داد!</p>
                         </div>
                     </div>
+                    <div class="d-flex align-items-center text-center justify-content-center gap-sm-0 gap-3">
+                        <a class="btn btn-primary" href="support.html">پشتیبانی</a>
+                    </div>
+                    <!-- /Contact -->
                 </div>
                 <!-- / Content -->
                 <!-- Footer -->
@@ -723,13 +1002,9 @@
 <script src="../assets/admin/vendor/js/menu.js"></script>
 <!-- endbuild -->
 <!-- Vendors JS -->
-<script src="../assets/admin/vendor/libs/apex-charts/apexcharts.js"></script>
-<script src="../assets/admin/vendor/libs/swiper/swiper.js"></script>
-<script src="../assets/admin/vendor/libs/datatables-bs5/datatables-bootstrap5.js"></script>
 <!-- Main JS -->
 <script src="../assets/admin/js/main.js"></script>
-<!-- Page JS -->
-<script src="../assets/admin/js/dashboards-analytics.js"></script>
+<!--  --------------------------   -->
 </body>
 
 

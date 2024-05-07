@@ -2090,7 +2090,7 @@ p {
 
 .section {
     overflow-x: hidden;
-    padding: 100px 0;
+    padding: 50px 0;
     position: relative;
 }
 
@@ -2461,24 +2461,24 @@ p {
     margin-bottom: 0
 }
 
-#topnav .buy-button {
+#topnav .login-button {
     float: left;
     line-height: 68px
 }
 
-#topnav .buy-button>li {
+#topnav .login-button>li {
     line-height: initial
 }
 
-#topnav .buy-button .login-btn-primary {
+#topnav .login-button .login-btn-primary {
     display: none
 }
 
-#topnav .buy-button .login-btn-light {
+#topnav .login-button .login-btn-light {
     display: inline-block
 }
 
-#topnav .buy-button .dropdown .dropdown-toggle:after,
+#topnav .login-button .dropdown .dropdown-toggle:after,
 #topnav .buy-menu-btn .dropdown .dropdown-toggle:after {
     display: none
 }
@@ -2647,11 +2647,11 @@ p {
     top: 0 !important
 }
 
-#topnav.nav-sticky .buy-button .login-btn-primary {
+#topnav.nav-sticky .login-button .login-btn-primary {
     display: inline-block
 }
 
-#topnav.nav-sticky .buy-button .login-btn-light {
+#topnav.nav-sticky .login-button .login-btn-light {
     display: none
 }
 
@@ -2863,7 +2863,7 @@ p {
         left: auto !important
     }
 
-    #topnav .buy-button {
+    #topnav .login-button {
         padding-right: 15px;
         margin-right: 15px
     }
@@ -2995,11 +2995,11 @@ p {
         float: right
     }
 
-    #topnav .buy-button .login-btn-primary {
+    #topnav .login-button .login-btn-primary {
         display: inline-block !important
     }
 
-    #topnav .buy-button .login-btn-light {
+    #topnav .login-button .login-btn-light {
         display: none
     }
 
@@ -3041,7 +3041,7 @@ p {
         top: 16px
     }
 
-    #topnav .buy-button {
+    #topnav .login-button {
         padding: 3px 0
     }
 }
@@ -3066,7 +3066,7 @@ p {
 }
 
 @media (max-width: 375px) {
-    #topnav .buy-button {
+    #topnav .login-button {
         display: none
     }
 
