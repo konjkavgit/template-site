@@ -264,9 +264,6 @@
   .app-email .email-list li:hover .email-list-item-meta .email-list-item-actions {
     display: block;
   }
-  .app-email .app-email-view {
-    width: calc(100% - 16.2rem);
-  }
 }
 @media (max-width: 576px) {
   .app-email .app-emails-list .emails-list-header {

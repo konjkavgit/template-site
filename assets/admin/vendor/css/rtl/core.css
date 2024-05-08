@@ -134,6 +134,8 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
 }
 
 :root {
@@ -220,7 +222,6 @@ h6, .h6 {
 
 p {
   margin-top: 0;
-  margin-bottom: 1rem;
 }
 
 abbr[title] {
@@ -26188,3 +26189,48 @@ a.bg-vimeo:hover, a.bg-vimeo:focus {
   }
 }
 
+.text-user{
+  position: relative;
+  background-color: #25d366;
+  color: #000;
+  min-height: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+
+}
+.text-user::before{
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #25d366;
+  transform: rotate(45deg);
+  top: 8px;
+  right: -5px;
+
+}
+.date-time{
+  font-size: 10px;
+}
+.text-admin{
+  position: relative;
+  background-color: #89ccff;
+  color: #000;
+  min-height: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: space-between;
+}
+.text-admin::after{
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #89ccff;
+  transform: rotate(45deg);
+  top: 8px;
+  left: -5px;
+}
