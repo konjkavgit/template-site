@@ -69,11 +69,11 @@
     // Wizard form
     const wizardPropertyListingForm = wizardPropertyListing.querySelector('#wizard-property-listing-form');
     // Wizard steps
-    const wizardPropertyListingFormStep1 = wizardPropertyListingForm.querySelector('#personal-details');
-    const wizardPropertyListingFormStep2 = wizardPropertyListingForm.querySelector('#property-details');
-    const wizardPropertyListingFormStep3 = wizardPropertyListingForm.querySelector('#property-features');
-    const wizardPropertyListingFormStep4 = wizardPropertyListingForm.querySelector('#property-area');
-    const wizardPropertyListingFormStep5 = wizardPropertyListingForm.querySelector('#price-details');
+    const wizardPropertyListingFormStep1 = wizardPropertyListingForm.querySelector('#project-details');
+    const wizardPropertyListingFormStep2 = wizardPropertyListingForm.querySelector('#price-details');
+    const wizardPropertyListingFormStep3 = wizardPropertyListingForm.querySelector('#upload-file');
+    const wizardPropertyListingFormStep4 = wizardPropertyListingForm.querySelector('#personal-details');
+    const wizardPropertyListingFormStep5 = wizardPropertyListingForm.querySelector('#more-details');
     // Wizard next prev button
     const wizardPropertyListingNext = [].slice.call(wizardPropertyListingForm.querySelectorAll('.btn-next'));
     const wizardPropertyListingPrev = [].slice.call(wizardPropertyListingForm.querySelectorAll('.btn-prev'));
@@ -86,20 +86,35 @@
     const FormValidation1 = FormValidation.formValidation(wizardPropertyListingFormStep1, {
       fields: {
         // * Validate the fields here based on your requirements
-        plFirstName: {
+        plProjectName: {
           validators: {
             notEmpty: {
-              message: 'لطفا اسم کوچک خود را وارد کنید'
+              message: 'لطفا اسم پروژه را وارد کنید'
             }
           }
         },
-        plLastName: {
+        plProjectType: {
           validators: {
             notEmpty: {
-              message: 'لطفا نام خانوادگی خود را وارد کنید'
+              message: 'لطفا نوع پروژه را انتخاب کنید'
             }
           }
-        }
+        },
+        plProjectTime: {
+          validators: {
+            notEmpty: {
+              message: 'لطفا زمان پیشنهادی را انتخاب کنید'
+            }
+          }
+        },
+        
+        plProjectPrice: {
+          validators: {
+            notEmpty: {
+              message: 'لطفا مبلغ پیشنهادی را وارد کنید'
+            }
+          }
+        },
       },
 
       plugins: {
