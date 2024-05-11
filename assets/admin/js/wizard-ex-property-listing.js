@@ -70,7 +70,6 @@
     const wizardPropertyListingForm = wizardPropertyListing.querySelector('#wizard-property-listing-form');
     // Wizard steps
     const wizardPropertyListingFormStep1 = wizardPropertyListingForm.querySelector('#project-details');
-    const wizardPropertyListingFormStep2 = wizardPropertyListingForm.querySelector('#price-details');
     const wizardPropertyListingFormStep3 = wizardPropertyListingForm.querySelector('#upload-file');
     const wizardPropertyListingFormStep4 = wizardPropertyListingForm.querySelector('#personal-details');
     const wizardPropertyListingFormStep5 = wizardPropertyListingForm.querySelector('#more-details');
@@ -82,39 +81,10 @@
       linear: true
     });
 
-    // Personal Details
+    // Project Details
     const FormValidation1 = FormValidation.formValidation(wizardPropertyListingFormStep1, {
       fields: {
         // * Validate the fields here based on your requirements
-        plProjectName: {
-          validators: {
-            notEmpty: {
-              message: 'لطفا اسم پروژه را وارد کنید'
-            }
-          }
-        },
-        plProjectType: {
-          validators: {
-            notEmpty: {
-              message: 'لطفا نوع پروژه را انتخاب کنید'
-            }
-          }
-        },
-        plProjectTime: {
-          validators: {
-            notEmpty: {
-              message: 'لطفا زمان پیشنهادی را انتخاب کنید'
-            }
-          }
-        },
-        
-        plProjectPrice: {
-          validators: {
-            notEmpty: {
-              message: 'لطفا مبلغ پیشنهادی را وارد کنید'
-            }
-          }
-        },
       },
 
       plugins: {
@@ -141,71 +111,7 @@
       validationStepper.next();
     });
 
-    // Property Details
-    const FormValidation2 = FormValidation.formValidation(wizardPropertyListingFormStep2, {
-      fields: {
-        // * Validate the fields here based on your requirements
-
-        plPropertyType: {
-          validators: {
-            notEmpty: {
-              message: 'لطفا نوع ملک را وارد کنید'
-            }
-          }
-        },
-        plZipCode: {
-          validators: {
-            notEmpty: {
-              message: 'کد پستی را وارد کنید'
-            },
-            stringLength: {
-              min: 4,
-              max: 10,
-              message: 'لطفا کد پستی بین 4 تا 10 کارکتر باشد'
-            }
-          }
-        }
-      },
-      plugins: {
-        trigger: new FormValidation.plugins.Trigger(),
-        bootstrap5: new FormValidation.plugins.Bootstrap5({
-          // Use this for enabling/changing valid/invalid class
-          // eleInvalidClass: '',
-          eleValidClass: '',
-          rowSelector: function (field, ele) {
-            // field is the field name & ele is the field element
-            switch (field) {
-              case 'plAddress':
-                return '.col-lg-12';
-              default:
-                return '.col-sm-6';
-            }
-          }
-        }),
-        autoFocus: new FormValidation.plugins.AutoFocus(),
-        submitButton: new FormValidation.plugins.SubmitButton()
-      }
-    }).on('core.form.valid', function () {
-      // Jump to the next step when all fields in the current step are valid
-      validationStepper.next();
-    });
-
-    // select2 (Property type)
-    const plPropertyType = $('#plPropertyType');
-    if (plPropertyType.length) {
-      plPropertyType.wrap('<div class="position-relative"></div>');
-      plPropertyType
-        .select2({
-          placeholder: 'انتخاب نوع ملک',
-          dropdownParent: plPropertyType.parent()
-        })
-        .on('change.select2', function () {
-          // Revalidate the color field when an option is chosen
-          FormValidation2.revalidateField('plPropertyType');
-        });
-    }
-
-    // Property Features
+    // Upload File
     const FormValidation3 = FormValidation.formValidation(wizardPropertyListingFormStep3, {
       fields: {
         // * Validate the fields here based on your requirements
@@ -225,10 +131,11 @@
       validationStepper.next();
     });
 
-    // Property Area
+    // Personal details
     const FormValidation4 = FormValidation.formValidation(wizardPropertyListingFormStep4, {
       fields: {
         // * Validate the fields here based on your requirements
+        
       },
       plugins: {
         trigger: new FormValidation.plugins.Trigger(),
@@ -240,7 +147,7 @@
         }),
         autoFocus: new FormValidation.plugins.AutoFocus(),
         submitButton: new FormValidation.plugins.SubmitButton()
-      }
+      },
     }).on('core.form.valid', function () {
       // Jump to the next step when all fields in the current step are valid
       validationStepper.next();
@@ -279,18 +186,14 @@
             break;
 
           case 1:
-            FormValidation2.validate();
-            break;
-
-          case 2:
             FormValidation3.validate();
             break;
 
-          case 3:
+          case 2:
             FormValidation4.validate();
             break;
 
-          case 4:
+          case 3:
             FormValidation5.validate();
             break;
 
@@ -303,10 +206,6 @@
     wizardPropertyListingPrev.forEach(item => {
       item.addEventListener('click', event => {
         switch (validationStepper._currentIndex) {
-          case 4:
-            validationStepper.previous();
-            break;
-
           case 3:
             validationStepper.previous();
             break;
